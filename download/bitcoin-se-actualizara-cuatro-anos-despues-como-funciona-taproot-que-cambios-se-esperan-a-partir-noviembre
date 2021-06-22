@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+   <script>
+ var country = 'AT';
+ var isSpainOrLatamUser = true;
+</script>
+ <title>Bitcoin se actualizará cuatro años después: cómo funciona Taproot y qué cambios se esperan a partir de noviembre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Es la primera gran actualización de Bitcoin en cuatro años. Pese a ser la criptomoneda más popular del mundo, durante este tiempo no habíamos visto ninguna..." />
+  <meta name="news_keywords" content="Bitcoin, Bitcoin moneda P2P, blockchain, Criptomonedas"/>
+  <meta name="robots" content="noodp" />
+<meta property="fb:admins" content="100000716994885"/>
+<meta property="fb:pages" content="41267802635" />
+<meta name="application-name" content="Xataka"/>
+<meta name="msapplication-tooltip" content="Gadgets y tecnología: últimas tecnologías en electrónica de consumo - XATAKA"/>
+<meta name="msapplication-starturl" content="https://www.xataka.com"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="msapplication-task" content="name=Lo mejor;action-uri=https://www.xataka.com/lomejor;icon-uri=https://img.weblogssl.com/css/xataka/p/v6/images/pin-bg-lomejor-icon.ico" />
+       <meta property="og:image" content="https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/840_560.jpg" />
+    <meta property="og:title" content="Bitcoin se actualizará cuatro años después: cómo funciona Taproot y qué cambios se esperan a partir de noviembre" />
+  <meta property="og:description" content="Es la primera gran actualización de Bitcoin en cuatro años. Pese a ser la criptomoneda más popular del mundo, durante este tiempo no habíamos visto ninguna..." />
+  <meta property="og:url" content="https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre" />
+  <meta property="og:type" content="article" />
+  <meta property="og:updated_time" content="2021-06-20T17:01:51+00:00" />
+  <meta name="DC.Creator" content="Enrique Pérez" />
+  <meta name="DC.Date" content="20 junio 2021" />
+  <meta name="DC.date.issued" content="2021-06-20T17:01:51+00:00" />
+  <meta name="DC.Source" content="Xataka" />
+  <meta property="article:modified_time" content="2021-06-20T17:01:51+00:00">
+  <meta property="article:published_time" content="2021-06-20T17:01:51+00:00">
+        <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/1366_521.jpg"><meta name="twitter:site" content="@xataka"><meta name="twitter:title" content="Bitcoin se actualizará cuatro años después: cómo funciona Taproot y qué cambios se esperan a partir de noviembre"><meta name="twitter:description" content="Es la primera gran actualización de Bitcoin en cuatro años. Pese a ser la criptomoneda más popular del mundo, durante este tiempo no habíamos visto ninguna..."><meta name="twitter:creator" content="@Lyzanor">         <script>
+ window.dataLayer = [{"site":"XTK","siteSection":"postpage","mapping":null,"vertical":"Technology","amp":"no","postId":234578,"postUrl":"https:\/\/www.xataka.com\/criptomonedas\/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre","publishDate":"2021-06-20","modifiedDate":"2021-06-20T17:01","categories":["criptomonedas"],"tags":["bitcoin","bitcoin-moneda-p2p","blockchain"],"videoContent":true,"partner":false,"blockLength":14,"author":"enrique p\u00e9rez","postType":"normal"}];
+</script>
+   <script type="text/javascript">
+
+ var gdprAppliesGlobally = true;
+
+ (function() {
+  function n() {
+   if (!window.frames.__cmpLocator) {
+    if (document.body && document.body.firstChild) {
+     var e = document.body;
+     var t = document.createElement("iframe");
+     t.style.display = "none";
+     t.name = "__cmpLocator";
+     t.title = "cmpLocator";
+     e.insertBefore(t, e.firstChild)
+    } else {
+     setTimeout(n, 5)
+    }
+   }
+  }
+
+  function e(e, t, n) {
+   if (typeof n !== "function") {
+    return
+   }
+   if (!window.__cmpBuffer) {
+    window.__cmpBuffer = []
+   }
+   if (e === "ping") {
+    n({
+     gdprAppliesGlobally: window.gdprAppliesGlobally,
+     cmpLoaded: false
+    }, true)
+   } else {
+    window.__cmpBuffer.push({
+     command: e,
+     parameter: t,
+     callback: n
+    })
+   }
+  }
+  e.stub = true;
+
+  function t(r) {
+   if (!window.__cmp || window.__cmp.stub !== true) {
+    return
+   }
+   if (!r.data) {
+    return
+   }
+   var a = typeof r.data === "string";
+   var e;
+   try {
+    e = a ? JSON.parse(r.data) : r.data
+   } catch (t) {
+    return
+   }
+   if (e.__cmpCall) {
+    var o = e.__cmpCall;
+    window.__cmp(o.command, o.parameter, function(e, t) {
+     var n = {
+      __cmpReturn: {
+       returnValue: e,
+       success: t,
+       callId: o.callId
+      }
+     };
+     r.source.postMessage(a ? JSON.stringify(n) : n, "*")
+    })
+   }
+  }
+  if (typeof window.__cmp !== "function") {
+   window.__cmp = e;
+   if (window.addEventListener) {
+    window.addEventListener("message", t, false)
+   } else {
+    window.attachEvent("onmessage", t)
+   }
+  }
+  n()
+ })();
+
+
+ (function(e) {
+  var t = document.createElement("script");
+  t.id = "spcloader";
+  t.type = "text/javascript";
+  t.async = true;
+  t.src = "https://sdk.privacy-center.org/" + e + "/loader.js?target=" + document.location.hostname;
+  t.charset = "utf-8";
+  var n = document.getElementsByTagName("script")[0];
+  n.parentNode.insertBefore(t, n)
+ })("7bd10a97-724f-47b3-8e9f-867f0dea61c8");
+
+ function scrollListener(e) {
+  var o = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0,
+   n = Math.max(document.body.scrollHeight || 0, document.documentElement.scrollHeight || 0, document.body.offsetHeight || 0, document.documentElement.offsetHeight || 0, document.body.clientHeight || 0, document.documentElement.clientHeight || 0);
+  30 <= (window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0) / (n - o) * 100 && (Didomi.setUserAgreeToAll(), window.removeEventListener("scroll", scrollListener))
+ }
+
+ window.didomiOnReady = window.didomiOnReady || [], window.didomiOnReady.push(function(e) {
+  e.notice.isVisible() && window.addEventListener("scroll", scrollListener)
+ });
+
+</script>
+<script>
+ window.WSL2 = window.WSL2 || {};
+ WSL2.config = WSL2.config || {};
+ WSL2.config.enableDidomiOverlay = 1;
+</script>
+
+         <script type="didomi/javascript" async="async" data-vendor="didomi:google" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script>
+  window.ga = window.ga || function () { (window.ga.q = window.ga.q || []).push(arguments); };
+  window.googletag = window.googletag || {};
+  googletag.cmd = googletag.cmd || [];
+ </script><script type="text/javascript">
+   var apstagSlots = [  {
+   slotID: 'div-gpt-top',
+   slotName: '/1018282/XTK-TOP-interior',
+   sizes: [[1000,250],[970,250],[728,90]]
+  },
+   {
+   slotID: 'div-gpt-lat',
+   slotName: '/1018282/XTK-LAT-interior',
+   sizes: [[300,600],[300,250],[160,600]]
+  },
+   {
+   slotID: 'div-gpt-lat2',
+   slotName: '/1018282/XTK-LAT2-interior',
+   sizes: [[300,600],[300,250],[160,600]]
+  },
+   {
+   slotID: 'div-gpt-cen',
+   slotName: '/1018282/XTK-CEN-interior',
+   sizes: [[970,250],[728,90],[300,250]]
+  },
+   {
+   slotID: 'div-gpt-cen2',
+   slotName: '/1018282/XTK-CEN2-interior',
+   sizes: [[970,250],[728,90],[300,250]]
+  },
+   {
+   slotID: 'div-gpt-bot2',
+   slotName: '/1018282/XTK-BOT2-interior',
+   sizes: [[970,250],[728,90],[300,250]]
+  },
+ ];
+  </script> <script async src="https://img.weblogssl.com/LPbackend/vendor/prebid-gdpr-v3.27.1.js?v=6e479c88"></script>
+<script type="didomi/javascript" data-vendor="didomi:google">
+ var PREBID_TIMEOUT = 3000;
+ var adUnits = [{"code":"div-gpt-top","mediaTypes":{"banner":{"sizes":[[1000,250],[970,250],[728,90]]}},"bids":[{"bidder":"rubicon","params":{"accountId":"11188","siteId":"139324","zoneId":"651984"}},{"bidder":"criteo","params":{"zoneId":"1079595"}},{"bidder":"appnexus","params":{"placementId":"11286629"}},{"bidder":"ix","params":{"siteId":"310891","size":[970,250]}},{"bidder":"ix","params":{"siteId":"310891","size":[728,90]}},{"bidder":"ix","params":{"siteId":"310891","size":[970,90]}},{"bidder":"richaudience","params":{"pid":"VXSeBIgcTp","supplyType":"site"}}]},{"code":"div-gpt-lat","mediaTypes":{"banner":{"sizes":[[300,600],[300,250],[160,600]]}},"bids":[{"bidder":"rubicon","params":{"accountId":"11188","siteId":"139324","zoneId":"651994"}},{"bidder":"criteo","params":{"zoneId":"1079591"}},{"bidder":"appnexus","params":{"placementId":"11286630"}},{"bidder":"ix","params":{"siteId":"310893","size":[300,600]}},{"bidder":"ix","params":{"siteId":"310893","size":[300,250]}},{"bidder":"ix","params":{"siteId":"310893","size":[160,600]}},{"bidder":"richaudience","params":{"pid":"rqb6Z1H3Qj","supplyType":"site"}}]},{"code":"div-gpt-lat2","mediaTypes":{"banner":{"sizes":[[300,600],[300,250],[160,600]]}},"bids":[{"bidder":"rubicon","params":{"accountId":"11188","siteId":"139324","zoneId":"651988"}},{"bidder":"criteo","params":{"zoneId":"1079585"}},{"bidder":"appnexus","params":{"placementId":"11286631"}},{"bidder":"ix","params":{"siteId":"310895","size":[300,600]}},{"bidder":"ix","params":{"siteId":"310895","size":[300,250]}},{"bidder":"ix","params":{"siteId":"310895","size":[160,600]}},{"bidder":"richaudience","params":{"pid":"WmQWmbN6uk","supplyType":"site"}}]},{"code":"div-gpt-cen","mediaTypes":{"banner":{"sizes":[[970,250],[728,90],[300,250]]}},"bids":[{"bidder":"rubicon","params":{"accountId":"11188","siteId":"139324","zoneId":"652006"}},{"bidder":"criteo","params":{"zoneId":"1079593"}},{"bidder":"appnexus","params":{"placementId":"11286632"}},{"bidder":"ix","params":{"siteId":"310897","size":[970,250]}},{"bidder":"ix","params":{"siteId":"310897","size":[970,90]}},{"bidder":"ix","params":{"siteId":"310897","size":[300,250]}},{"bidder":"ix","params":{"siteId":"310897","size":[728,90]}},{"bidder":"richaudience","params":{"pid":"610ab41CxI","supplyType":"site"}}]},{"code":"div-gpt-cen2","mediaTypes":{"banner":{"sizes":[[970,250],[728,90],[300,250]]}},"bids":[{"bidder":"rubicon","params":{"accountId":"11188","siteId":"139324","zoneId":"652160"}},{"bidder":"criteo","params":{"zoneId":"1079586"}},{"bidder":"appnexus","params":{"placementId":"11286633"}},{"bidder":"ix","params":{"siteId":"310899","size":[970,250]}},{"bidder":"ix","params":{"siteId":"310899","size":[970,90]}},{"bidder":"ix","params":{"siteId":"310899","size":[300,250]}},{"bidder":"ix","params":{"siteId":"310899","size":[728,90]}},{"bidder":"richaudience","params":{"pid":"D09uteHYyk","supplyType":"site"}}]},{"code":"div-gpt-bot2","mediaTypes":{"banner":{"sizes":[[970,250],[728,90],[300,250]]}},"bids":[{"bidder":"rubicon","params":{"accountId":"11188","siteId":"139324","zoneId":"652164"}},{"bidder":"criteo","params":{"zoneId":"1079584"}},{"bidder":"appnexus","params":{"placementId":"11286634"}},{"bidder":"ix","params":{"siteId":"310901","size":[300,250]}},{"bidder":"ix","params":{"siteId":"310901","size":[728,90]}},{"bidder":"richaudience","params":{"pid":"2cuzQIb9ok","supplyType":"site"}}]}];
+ var pbjs = pbjs || {};
+ pbjs.que = pbjs.que || [];
+   googletag.cmd.push(function() { googletag.pubads().disableInitialLoad(); });
+  pbjs.bidderSettings = {
+ rubicon: { bidCpmAdjustment: function(bidCpm) { return 0.9 * bidCpm; } }
+};
+
+pbjs.que.push(function() {
+   pbjs.setConfig({
+   consentManagement: { cmpApi: 'iab', timeout: 2000, defaultGdprScope: true },
+   priceGranularity: 'dense'
+  });
+ });
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+apstag.init({ pubID: '3500', adServer: 'googletag', bidTimeout: 2e3 });
+
+
+(function() {
+ var bidders = ['a9', 'prebid'];
+ var requestManager = { adserverRequestSent: false };
+
+ bidders.forEach(function(bidder) { requestManager[bidder] = false; });
+
+ function _getGPTSlots(apstagSlots) {
+  var slotIDs = apstagSlots.map(function(slot) { return slot.slotID; });
+  return googletag.pubads().getSlots().filter(function(slot) {
+   return slotIDs.indexOf(slot.getSlotElementId()) > -1;
+  });
+ }
+
+ function allBiddersBack() {
+  var allBiddersBack = bidders
+   .map(function(bidder) { return requestManager[bidder]; })
+   .filter(Boolean)
+   .length === bidders.length;
+  return allBiddersBack;
+ }
+
+ function headerBidderBack(bidder) {
+  if (requestManager.adserverRequestSent === true) { return; }
+  if (bidder === 'a9') {
+   requestManager.a9 = true;
+  } else if (bidder === 'prebid') {
+   requestManager.prebid = true;
+  }
+  if (allBiddersBack()) { sendAdserverRequest(); }
+ }
+
+ function sendAdserverRequest() {
+  if (requestManager.adserverRequestSent === true) { return; }
+  requestManager.adserverRequestSent = true;
+  pbjs.adserverRequestSent = true;
+  requestManager.sendAdserverRequest = true;
+  googletag.cmd.push(function() {
+       apstag.setDisplayBids();
+    googletag.pubads().setRequestNonPersonalizedAds(window.ConsentforGoogleIs);
+    pbjs.onEvent('setTargeting', function() { googletag.pubads().refresh(); });
+    pbjs.setTargetingForGPTAsync();
+        });
+ }
+
+ function requestBids(apstagSlots, adUnits, bidTimeout) {
+  
+  pbjs.que.push(function() {
+   pbjs.addAdUnits(adUnits);
+   pbjs.requestBids({ bidsBackHandler: function (bidResponses) { headerBidderBack('prebid'); } });
+  });
+
+     apstag.fetchBids({ slots: apstagSlots, timeout: bidTimeout }, function(bids) { headerBidderBack('a9'); });
+   }
+
+ requestBids(apstagSlots, adUnits, PREBID_TIMEOUT)
+ setTimeout(function() { sendAdserverRequest(); }, PREBID_TIMEOUT);
+
+     setTimeout(function() {
+   var wins = top.pbjs.getAllWinningBids();
+   ga('create', 'UA-157151606-2', 'auto', { 'name': 'pbjsanalytics' });
+   for (var i = 0; i < wins.length; i++) {
+    var b = wins[i];
+    rev = b.cpm * 0.001 * 1000000;
+    rev = Math.round(rev)
+    site = dataLayer[0].site + '-' + b.adUnitCode
+    action = b.bidder
+    status = b.status
+    if (b.appnexus && b.appnexus.dealPriority) {
+     site = 'deal-' + site
+    }
+    if ('rendered' == status && !b.adUnitCode.includes("PTB")) {
+     ga('pbjsanalytics.send', { hitType: 'event', eventCategory: 'wins', eventAction: action, eventLabel: site, eventValue: rev })
+    }
+   }
+  }, 3200)
+ })();
+
+</script>
+       <script>
+  googletag.cmd.push(function() {
+         googletag.defineSlot('/1018282/XTK-LAT-interior', [[300,600],[300,250],[160,600]], 'div-gpt-lat').addService(googletag.pubads());
+   googletag.defineSlot('/1018282/XTK-CEN-interior', [[970,250],[728,90],[300,250]], 'div-gpt-cen').addService(googletag.pubads());
+   googletag.defineSlot('/1018282/XTK-CEN2-interior', [[970,250],[728,90],[300,250]], 'div-gpt-cen2').addService(googletag.pubads());
+   googletag.defineSlot('/1018282/XTK-LAT2-interior', [[300,600],[300,250],[160,600]], 'div-gpt-lat2').addService(googletag.pubads());
+   googletag.defineSlot('/1018282/XTK-BOT2-interior', [[970,250],[728,90],[300,250]], 'div-gpt-bot2').addService(googletag.pubads());
+   googletag.defineSlot('/1018282/XTK-TOP-interior', [[1000,250],[970,250],[728,90]], 'div-gpt-top').addService(googletag.pubads());
+     googletag.defineSlot('/1018282/XTK-OUT-interior', [1,1], 'div-gpt-out').addService(googletag.pubads());
+    googletag.defineSlot('/1018282/XTK-TXT-interior', [320,112], 'div-gpt-txt').addService(googletag.pubads());
+  googletag.defineOutOfPageSlot('/1018282/XTK-INT-interior', 'div-gpt-int').addService(googletag.pubads());  googletag.defineSlot('/1018282/XTK-INT2-interior', [1,1], 'div-gpt-int2').addService(googletag.pubads());
+ 
+   var MAX_source = "";
+         googletag.pubads().setTargeting("type", "post").setTargeting("source", MAX_source).setTargeting("site", "XTK").setTargeting("siteSection", "postpage").setTargeting("mapping", "").setTargeting("vertical", "Technology").setTargeting("amp", "no").setTargeting("postId", "234578").setTargeting("postUrl", "https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre").setTargeting("publishDate", "2021-06-20").setTargeting("modifiedDate", "2021-06-20T17:01").setTargeting("categories", ["criptomonedas"]).setTargeting("tags", ["bitcoin","bitcoin-moneda-p2p","blockchain"]).setTargeting("videoContent", "1").setTargeting("partner", "").setTargeting("blockLength", "14").setTargeting("author", "enrique pérez").setTargeting("postType", "normal");
+   googletag.pubads().disableInitialLoad();
+   googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+  });
+ </script>
+
+ <script type="application/ld+json">
+ {
+    "@context": "http:\/\/schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": "https:\/\/www.xataka.com\/criptomonedas\/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre",
+    "name": "Bitcoin se actualizar\u00e1 cuatro a\u00f1os despu\u00e9s: c\u00f3mo funciona Taproot y qu\u00e9 cambios se esperan a partir de...",
+    "headline": "Bitcoin se actualizar\u00e1 cuatro a\u00f1os despu\u00e9s: c\u00f3mo funciona Taproot y qu\u00e9 cambios se esperan a partir de...",
+    "datePublished": "2021-06-20T17:01:51",
+    "dateModified": "2021-06-20T17:01:51",
+    "description": "Es la primera gran actualizaci\u00f3n de Bitcoin en cuatro a\u00f1os. Pese a ser la criptomoneda m\u00e1s popular del mundo, durante este tiempo no hab\u00edamos visto ninguna...",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Xataka",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/img.weblogssl.com\/css\/xataka\/p\/amp\/images\/logo.png?v=1624359754",
+            "width": 600,
+            "height": 60
+        }
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https:\/\/i.blogs.es\/c8555d\/brian-wangenheim-bitcoin\/1366_2000.jpg",
+        "width": "1200",
+        "height": "900"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Enrique P\u00e9rez"
+    },
+    "url": "https:\/\/www.xataka.com\/criptomonedas\/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre",
+    "thumbnailUrl": "https:\/\/i.blogs.es\/c8555d\/brian-wangenheim-bitcoin\/1366_2000.jpg",
+    "articleSection": "Criptomonedas",
+    "creator": "Enrique P\u00e9rez",
+    "keywords": "Bitcoin, Bitcoin moneda P2P, blockchain, Criptomonedas"
+}
+</script>
+   <!--[if gte IE 9]>
+<link rel="shortcut icon" type="image/x-icon" href="https://img.weblogssl.com/css/xataka/p/v6/images/pin-bg-home-icon.ico"/>
+<link rel=icon type="image/ico" href="https://img.weblogssl.com/css/xataka/p/v6/images/pin-bg-home-icon.ico"/>
+<![endif]-->
+<link rel="shortcut icon" href="https://img.weblogssl.com/css/xataka/p/common/favicon.ico" type="image/ico" />
+<link rel="apple-touch-icon" href="https://img.weblogssl.com/css/xataka/p/common/apple-touch-icon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://img.weblogssl.com/css/xataka/p/common/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://img.weblogssl.com/css/xataka/p/common/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://img.weblogssl.com/css/xataka/p/common/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://img.weblogssl.com/css/xataka/p/common/apple-touch-icon-57-precomposed.png">
+   <link rel="alternate" type="application/rss+xml" title="Xataka - todas las noticias" href="/index.xml" />
+   <!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="https://img.weblogssl.com/css/xataka/p/v6/ie7.css">
+<![endif]-->
+  <link rel="image_src" href="https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/75_75.jpg" />
+          <link rel="canonical" href="https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre" />
+         <link rel="amphtml" href="https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre/amp" >
+  <link rel="stylesheet" type="text/css" href="https://img.weblogssl.com/css/xataka/p/skin-site-xataka-d/main.css?v=1624359754">
+ </head>
+ <body class="js-desktop prod">
+    <script type="didomi/javascript">
+ function sendcomscore() {
+
+ var s = document.createElement("script"),
+ el = document.getElementsByTagName("script")[0];
+ s.setAttribute("data-vendor", "iab:77");
+ s.setAttribute("type", "text/javascript");
+ s.text = 'var cs_ucfr = ""; \
+ if (Didomi.getUserStatusForVendor(77)) { \
+  var cs_ucfr = "1"; \
+ } else if (Didomi.getUserStatusForVendor(77) == false) { \
+  var cs_ucfr = "0"; \
+ } \
+ \
+ var _comscore = _comscore || []; \
+ var configs = { \
+  c1: "2", \
+  c2: "6035191", \
+  cs_ucfr: cs_ucfr \
+ }; \
+ var keyword = keyword || ""; \
+ if (keyword) { \
+  configs.options = { \
+   url_append: "comscorekw=" + keyword \
+  }; \
+ } \
+ _comscore.push(configs); \
+ var s = document.createElement("script"), \
+ el = document.getElementsByTagName("script")[0]; \
+ \
+ s.src = "https://sb.scorecardresearch.com/cs/6035191/beacon.js"; \
+ \
+ window.didomiEventListeners = []; \
+ \
+ el.parentNode.insertBefore(s, el);';
+ el.parentNode.insertBefore(s, el);
+}
+
+if(Didomi.getUserStatusForVendor(77) == undefined){
+
+ window.didomiEventListeners = window.didomiEventListeners || [];
+ window.didomiEventListeners.push({
+  event: 'consent.changed',
+  listener: function(context) {
+
+  sendcomscore()
+  }
+ });
+} else {
+ sendcomscore()
+}</script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+     ga('provide', 'adblockTracker', function(tracker, opts) {
+ var ad = document.createElement('ins');
+ ad.className = 'AdSense';
+ ad.style.display = 'block';
+ ad.style.position = 'absolute';
+ ad.style.top = '-1px';
+ ad.style.height = '1px';
+ document.body.appendChild(ad);
+ tracker.set('dimension3', 'Ads Blocked');
+ document.body.removeChild(ad);
+});
+    ga('create', "UA-78515-2", 'auto');
+  ga('create', "UA-78515-62", 'auto', {'name': 'rollUp'});
+  ga('set', 'contentGroup1', 'post');
+  ga('set', 'contentGroup2', "enrique pérez");
+  ga('set', 'contentGroup3', "criptomonedas");
+  ga('set', 'contentGroup4', "normal");
+  ga('set', 'contentGroup5', "210620");
+  ga('rollUp.set', 'contentGroup1', 'post');
+  ga('rollUp.set', 'contentGroup2', "enrique pérez");
+  ga('rollUp.set', 'contentGroup3', "criptomonedas");
+  ga('rollUp.set', 'contentGroup4', "normal");
+  ga('rollUp.set', 'contentGroup5', "210620");
+     ga('require', 'adblockTracker', {dimensionIndex: 2});
+   </script>
+  <div class="customize-me">
+   <div class="head-content-favs">
+    <section class="head-container head-container-with-ad head-container-with-corner m-favicons-compact m-head-masthead">
+ <div class="head head-with-ad is-init">
+  <section class="head-favicons-container">
+ <nav class="head-favicons">
+     <div class="head-favicons-index head-webedia-logo">
+    <a id="favicons-toggle" href="https://www.webedia.es/" data-target="#head-favicons"><abbr title="Webedia">Webedia</abbr></a>
+   </div>
+   </nav>
+</section>
+  <div class="masthead-site-lead ">
+ <div class="masthead-container">
+  <div class="masthead-logo">
+   <div class="masthead-logo-brand">
+    <a href="/" class="masthead-brand">Xataka</a>
+   </div>
+     </div>
+       <nav class="masthead-actions">
+    <ul class="masthead-actions-list">
+     <li class="masthead-actions-list-item"><a href="#sections" class="masthead-actions-menu m-v1 js-toggle" data-searchbox="#search-field-1">Menú</a></li>
+     <li class="masthead-actions-list-item"><a href="#headlines" class="masthead-actions-nuevo m-v1 js-toggle">Nuevo</a></li>
+    </ul>
+   </nav>
+   </div>
+</div>
+     <div class="masthead-site-nav-container js-nano-container">
+ <nav class="masthead-site-nav ">
+     <a class="masthead-nav-search js-toggle" data-searchbox="#search-field-2" href="#search"></a>
+    <ul class="masthead-nav-topics">
+                      <li class="masthead-nav-topics-item">
+      <a class="masthead-nav-topics-anchor" href="https://www.xataka.com/categoria/analisis">ANÁLISIS</a>
+     </li>
+                <li class="masthead-nav-topics-item">
+      <a class="masthead-nav-topics-anchor" href="https://www.xataka.com/categoria/seleccion">XATAKA SELECCIÓN</a>
+     </li>
+                <li class="masthead-nav-topics-item">
+      <a class="masthead-nav-topics-anchor" href="https://www.xataka.com/categoria/moviles">MÓVILES</a>
+     </li>
+                <li class="masthead-nav-topics-item">
+      <a class="masthead-nav-topics-anchor" href="https://www.xataka.com/categoria/medicina-y-salud">CIENCIA</a>
+     </li>
+                <li class="masthead-nav-topics-item">
+      <a class="masthead-nav-topics-anchor" href="https://www.xataka.com/categoria/pro">PRO</a>
+     </li>
+                <li class="masthead-nav-topics-item">
+      <a class="masthead-nav-topics-anchor" href="https://www.getrevue.co/profile/xataka">NEWSLETTER</a>
+     </li>
+                </ul>
+  <ul class="masthead-nav-social">
+    <li class="masthead-nav-social-item"><a href="https://flipboard.com/@xataka" class="masthead-nav-social-anchor masthead-social-flipboard" rel="nofollow">Flipboard</a></li>
+    <li class="masthead-nav-social-item"><a href="https://instagram.com/xataka" class="masthead-nav-social-anchor masthead-social-instagram" rel="nofollow">Instagram</a></li>
+    <li class="masthead-nav-social-item"><a href="https://www.youtube.com/user/xatakatv?sub_confirmation=1" class="masthead-nav-social-anchor masthead-social-youtube" rel="nofollow">Youtube</a></li>
+    <li class="masthead-nav-social-item"><a href="https://twitter.com/xataka" class="masthead-nav-social-anchor masthead-social-twitter" rel="nofollow">Twitter</a></li>
+ </ul>
+ </nav>
+</div>
+   </div>
+</section>
+ <div class="masthead-nav-brandsections js-branded-tabs">
+ <div class="masthead-nav-brandsections-inner">
+  <span class="masthead-nav-brandsections-prev js-prev-btn-container" style="display:none;">
+   <button class="masthead-nav-brandsections-prev-btn js-prev-btn"></button>
+  </span>
+  <span class="masthead-nav-brandsections-next js-next-btn-container" style="display:none;">
+   <button class="masthead-nav-brandsections-next-btn js-next-btn"></button>
+  </span>
+  <ul class="masthead-nav-brandsections-list js-tabs-list">
+   <li class="masthead-nav-brandsections-item">PARTNERS</li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="ë-Citroën" href="/citroenelectricos" class="masthead-nav-brandsections-link citroenelectricos">
+      ë-Citroën
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="e-Movilidad Opel" href="/e-movilidadopel" class="masthead-nav-brandsections-link e-movilidadopel">
+      e-Movilidad Opel
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="e-Motion Peugeot" href="/e-motionpeugeot" class="masthead-nav-brandsections-link e-motionpeugeot">
+      e-Motion Peugeot
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="Innovación LG" href="/tecnologialg" class="masthead-nav-brandsections-link tecnologialg">
+      Innovación LG
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="realme Tech Life" href="/realmetechlife" class="masthead-nav-brandsections-link realmetechlife">
+      realme Tech Life
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="ISDIgital" href="/isdigital" class="masthead-nav-brandsections-link isdigital">
+      ISDIgital
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="Planeta Fantasy" href="/planetafantasy" class="masthead-nav-brandsections-link planetafantasy">
+      Planeta Fantasy
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="Soluciones IT Asseco" href="/solucionesitasseco" class="masthead-nav-brandsections-link solucionesitasseco">
+      Soluciones IT Asseco
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="Espacio Samsung S21" href="/espaciosamsungs21" class="masthead-nav-brandsections-link espaciosamsungs21">
+      Espacio Samsung S21
+     </a>
+    </li>
+       <li class="masthead-nav-brandsections-item">
+     <a title="Programación Skylab" href="/programacionskylab" class="masthead-nav-brandsections-link programacionskylab">
+      Programación Skylab
+     </a>
+    </li>
+     </ul>
+ </div>
+</div>
+
+     <div class="ad ad-top">
+  <div class="ad-box" id="div-gpt-top">
+   <script>
+    googletag.cmd.push(function() { googletag.display("div-gpt-top"); });
+   </script>
+  </div>
+ </div>
+    
+    <div class="page-container">
+     <div class="content-container">
+      <main>
+       <article class="article article-normal">
+        <div class="article-header article-normal-header">
+ <header>
+  <h1>
+   <span>
+         Bitcoin se actualizará cuatro años después: cómo funciona Taproot y qué cambios se esperan a partir de noviembre   </span>
+  </h1>
+ </header>
+</div>
+        <div class="article-content-wrapper">
+         <div class="article-content-inner">
+          <div class="article-header article-normal-header">
+ <header>
+  <div class="article-normal-header-content">
+       <div class="article-asset-big article-asset-image js-post-images-container">
+      <img alt="Bitcoin se actualizará cuatro años después: cómo funciona Taproot y qué cambios se esperan a partir de noviembre" srcset="https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/450_1000.jpg 450w, https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/650_1200.jpg 650w, https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/1024_2000.jpg 1024w, https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/1366_2000.jpg 1366w" src="https://i.blogs.es/c8555d/brian-wangenheim-bitcoin/450_1000.jpg" sizes="100vw"><span></span>
+    </div>
+          <div class="article-actions">
+          <div class="article-comments">
+ <a title="43 comentarios" href="#comments" class="js-smooth-scroll">43 comentarios</a>
+</div>
+    </div>
+     </div>
+ </header>
+</div>
+          <div class="article-aside m-blob-aside">
+           <div class="article-aside-content">
+               <div class="section-deeplinking-container m-deeplinking-aside">
+  <div class="section-deeplinking">
+   <span class="section-deeplinking-header">HOY SE HABLA DE</span>
+   <ul id="js-deeplinking-news-nav-links" class="section-deeplinking-list">
+         <li class="section-deeplinking-item"><a href="https://www.xataka.com/criptomonedas/bitcoin-ethereum-se-desploman-china-obliga-a-sus-bancos-a-bloquear-transacciones-criptos" class="section-deeplinking-anchor">Bitcoin</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.xatakamovil.com/guias-de-compra/mejores-moviles-oferta-amazon-prime-day-2021-1" class="section-deeplinking-anchor">Mejores móviles</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.xatakamovil.com/aplicaciones/whatsapp-no-podra-usarse-movil-a-vez-beta-modo-multidispositivo-wabetainfo" class="section-deeplinking-anchor">Whatsapp</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.vidaextra.com/pc/gan-theft-auto-grand-theft-auto-creado-inteligencia-artificial-nvidia-a-base-ver-videos-gta-v" class="section-deeplinking-anchor">Inteligencia Artificial</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.xataka.com/seleccion/compra-smartwatch-avanzado-samsung-casi-a-mitad-precio-amazon-prime-day-galaxy-watch-3-a-200-euros" class="section-deeplinking-anchor">Smartwatch</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.compradiccion.com/tablets-y-libro-electronico/nunca-has-visto-esta-tableta-barata-amazon-tiene-huawei-mediapad-t5-a-solo-103-euros-prime-day" class="section-deeplinking-anchor">Huawei</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.mundoxiaomi.com/ofertas/xiaomi-mi-10t-pro-5g-trae-xiaomi-mi-electric-scooter-1s-regalo-motivo-amazon-prime-day" class="section-deeplinking-anchor">Xiaomi Mi 10T</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.xataka.com/seleccion/bicicleta-electrica-plegable-xiaomi-se-desploma-amazon-prime-day-ligera-45-kilometros-autonomia-a-599-euros" class="section-deeplinking-anchor">Xiaomi</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.xatakandroid.com/guias-de-compra/mejores-moviles-oferta-oneplus-oppo-prime-day-oneplus-nord-a-precio-ridiculo-oppo-find-x2-lite-suelos-rebajas" class="section-deeplinking-anchor">Oppo</a></li>
+         <li class="section-deeplinking-item"><a href="https://www.xataka.com/seleccion/xiaomi-redmi-note-9-debajo-100-euros-amazon-prime-day-cuatro-camaras-traseras-autonomia-2-dias-solo-99-99-euros" class="section-deeplinking-anchor">Redmi</a></li>
+       </ul>
+   <div id="js-deeplinking-news-nav-btn" class="section-deeplinking-btn" style="display:none"></div>
+  </div>
+ </div>
+
+            <div class="sticky-sidebar-container">
+              <div class="ad ad-lat">
+  <div class="ad-box" id="div-gpt-lat">
+   <script>
+    googletag.cmd.push(function() { googletag.display("div-gpt-lat"); });
+   </script>
+  </div>
+ </div>
+              <script>
+ window.WSLModules = window.WSLModules || {};
+ WSLModules.Overlay = {'moduleConf' : "c1"};
+</script>
+<div class="related-alts-container">
+  <section class="related-alts">
+ <ul>
+         <li class="related-native-item">
+     <span class="sidebar-disclaimer">Ofrecido por Innovación LG</span>
+     <div class="related-item m-is-club">
+      <a href="https://tecnologialg.xataka.com/como-conseguir-frigorifico-eficiente/?utm_source=Destacado&amp;utm_medium=ESPACIO&amp;utm_campaign=LG">
+       <img src="https://i.blogs.es/99cd26/lg_frigorifico_destacado/original.jpeg" alt="Nueve razones para comprar un frigorífico ecoeficiente (y una de ellas es un año de cerveza gratis)">
+       <p class="related-item-info related-item-title">Nueve razones para comprar un frigorífico ecoeficiente (y una de ellas es un año de cerveza gratis)</p>
+      </a>
+     </div>
+    </li>
+       <li class="related-native-item">
+     <span class="sidebar-disclaimer">Ofrecido por Innovación Volvo</span>
+     <div class="related-item m-is-club">
+      <a href="https://innovacionvolvo.xataka.com/apps-que-llevan-coche-conectado-al-siguiente-nivel-diez-funciones-interesantes-volvo-on-call/?utm_source=Destacado&amp;utm_medium=ESPACIO&amp;utm_campaign=VOLVO">
+       <img src="https://i.blogs.es/7767e5/abrepequena_incall/original.jpeg" alt="Apps que llevan el coche conectado al siguiente nivel: las diez funciones más interesantes de Volvo">
+       <p class="related-item-info related-item-title">Apps que llevan el coche conectado al siguiente nivel: las diez funciones más interesantes de Volvo</p>
+      </a>
+     </div>
+    </li>
+       <li class="related-native-item">
+     <span class="sidebar-disclaimer">Ofrecido por realme</span>
+     <div class="related-item m-is-club">
+      <a href="https://realmetechlife.xataka.com/estas-pensando-comprar-robot-aspirador-estos-trucos-empezaras-a-sacarle-partido-minuto-cero/?utm_source=Destacado&amp;utm_medium=ESPACIO&amp;utm_campaign=REALME">
+       <img src="https://i.blogs.es/a09ea9/abrepequena_aspirador/original.jpeg" alt="Si piensas comprar un robot aspirador, con estos trucos le sacarás partido desde el minuto cero">
+       <p class="related-item-info related-item-title">Si piensas comprar un robot aspirador, con estos trucos le sacarás partido desde el minuto cero</p>
+      </a>
+     </div>
+    </li>
+       <li class="related-native-item">
+     <span class="sidebar-disclaimer">Ofrecido por Samsung</span>
+     <div class="related-item m-is-club">
+      <a href="https://espaciosamsungs21.xataka.com/22-trucos-para-sacar-maximo-partido-al-samsung-s21-ultra-5g-primer-dia/?utm_source=destacado&amp;utm_medium=ESPACIO&amp;utm_campaign=SAMSUNGS21">
+       <img src="https://i.blogs.es/ded055/25_galaxys21_des/original.jpeg" alt="22 trucos para sacar el máximo partido al Samsung S21 Ultra 5G desde el primer día">
+       <p class="related-item-info related-item-title">22 trucos para sacar el máximo partido al Samsung S21 Ultra 5G desde el primer día</p>
+      </a>
+     </div>
+    </li>
+              <li class="related-native-item">
+     <span class="sidebar-disclaimer">
+      Ofrecido por Minotauro
+     </span>
+           <div class="related-item m-is-brand-article">
+       <a href="https://www.xataka.com/n/30-anos-aventuras-todos-secretos-mitico-indiana-jones-contados-salva-rubio/?utm_source=destacado&amp;utm_medium=brandarticle&amp;utm_campaign=MINOTAURO" rel="nofollow">
+        <img src="https://i.blogs.es/e93826/indy140/1366_2000.jpeg" alt="40 años de aventuras: todos los secretos del mítico Indiana Jones contados por Salva Rubio">
+        <div class="related-item-info">
+         <h3 class="related-item-title">40 años de aventuras: todos los secretos del mítico Indiana Jones contados por Salva Rubio</h3>
+        </div>
+       </a>
+      </div>
+         </li>
+       <li class="related-native-item">
+     <span class="sidebar-disclaimer">
+      Ofrecido por PcComponentes
+     </span>
+           <div class="related-item m-is-brand-article">
+       <a href="https://www.xataka.com/n/conectate-al-verano-estan-aqui-pcdays-pccomponentes-ofertas-exclusivas-sorteos-directo?utm_source=destacado&amp;utm_medium=brandarticle&amp;utm_campaign=PCCOMPONENTES" rel="nofollow">
+        <img src="https://i.blogs.es/28afb2/fotodestacado/original.jpeg" alt="Conéctate al verano: ya están aquí los PcDays de PcComponentes con ofertas exclusivas y sorteos">
+        <div class="related-item-info">
+         <h3 class="related-item-title">Conéctate al verano: ya están aquí los PcDays de PcComponentes con ofertas exclusivas y sorteos</h3>
+        </div>
+       </a>
+      </div>
+         </li>
+       <li class="related-native-item">
+     <span class="sidebar-disclaimer">
+      Ofrecido por Opel
+     </span>
+           <div class="related-item m-is-brand-article">
+       <a href="https://www.xataka.com/n/plan-moves-iii-que-tener-cuenta-para-comprar-coche-electrico-este-ano-ahorrar-dinero?utm_source=Destacado&amp;utm_medium=BR&amp;utm_campaign=OPEL" rel="nofollow">
+        <img src="https://i.blogs.es/ed8f7e/opel-mokka-e/1366_2000.jpeg" alt="Plan MOVES III: qué tener en cuenta para comprar un coche eléctrico este año y ahorrar dinero">
+        <div class="related-item-info">
+         <h3 class="related-item-title">Plan MOVES III: qué tener en cuenta para comprar un coche eléctrico este año y ahorrar dinero</h3>
+        </div>
+       </a>
+      </div>
+         </li>
+      </ul>
+</section>
+</div>
+
+             <div class="related-alts-container">
+  <div class="aside-box">
+  <p class="aside-title">Suscríbete a Xataka</p>
+  <form class="js-subscription newsletter-form aside-newsletter-form" method="post" data-url="https://mailer.weblogssl.com/subscribe_check/#email#/xataka/Xataka">
+   <p class="newsletter-hint">Recibe un email al día con nuestros artículos:
+   </p>
+   <p>
+    <input class="js-email newsletter-input" type="email" placeholder="Tu correo electrónico">
+    <button class="btn-primary newsletter-button" type="submit">Suscribir</button>
+   </p>
+  </form>
+ </div>
+   <div class="aside-box">
+   <nav class="menu-follow aside-menu-follow">
+   <span class="item-meta aside-item-meta">Síguenos</span>
+   <ul>
+ <li>
+  <a href="http://twitter.com/xataka" class="icon-twitter link-twitter" rel="nofollow">Twitter</a>
+ </li>
+ <li>
+  <a href="https://www.facebook.com/Xataka" class="icon-facebook link-facebook" rel="nofollow">Facebook</a>
+ </li>
+ <li>
+  <a href="https://www.youtube.com/user/xatakatv?sub_confirmation=1" class="icon-youtube link-youtube" rel="nofollow">Youtube</a>
+ </li>
+ <li>
+  <a class="icon-instagram link-instagram" href="https://instagram.com/xataka" rel="nofollow">Instagram</a>
+ </li>
+ <li>
+  <a href="https://telegram.me/xataka" class="icon-telegram link-telegram" rel="nofollow">Telegram</a>
+ </li>
+ <li>
+  <a class="icon-rss link-rss" href="/index.xml" rel="nofollow">RSS</a>
+ </li>
+ <li>
+  <a href="https://flipboard.com/@xataka" class="icon-flipboard link-flipboard" rel="nofollow">Flipboard</a>
+ </li>
+ <li>
+  <a href="https://www.linkedin.com/company/11275845/" class="icon-linkedin link-linkedin" rel="nofollow">LinkedIn</a>
+ </li>
+</ul>
+  </nav>
+ </div>
+ </div>
+                            <div class="ad ad-lat2">
+  <div class="ad-box" id="div-gpt-lat2">
+   <script>
+    googletag.cmd.push(function() { googletag.display("div-gpt-lat2"); });
+   </script>
+  </div>
+ </div>
+                                      </div>
+           </div>
+          </div>
+          <div class="article-metadata-container">
+ <div class="article-metadata">
+    <div class="article-time">
+   <time
+   class="article-date"
+   datetime="2021-06-20T17:01:51+00:00"
+   data-format="D MMMM YYYY"
+   data-post-modified-time="1624208511"
+   data-post-modified-format="D MMMM YYYY, HH:mm"
+   data-post-reindexed-original-time=""
+  >
+   20 junio 2021, 19:01  </time>
+ </div>
+  <span id="is-editor"></span>
+       <footer class="article-author">
+ <a class="article-author-avatar" href="/autor/lyzanor" rel="author">
+  <img alt="lyzanor" src="https://www.gravatar.com/avatar/f173a2c126f4451161fe7f9055f8bcf9?s=80&amp;d=mm&amp;r=g">
+ </a>
+ <a class="article-author-link" href="/autor/lyzanor" rel="author">Enrique Pérez</a>
+   <a class="article-author-twitter" href="http://www.twitter.com/Lyzanor">@Lyzanor</a>
+ </footer>
+   </div>
+ </div>
+                    <div class="article-content">
+            <div class="blob js-post-images-container">
+  <p>Es la primera gran actualización de Bitcoin en cuatro años. Pese a ser la criptomoneda más popular del mundo, durante este tiempo no habíamos visto ninguna mejora. Eso cambiará el próximo mes de noviembre, cuando está previsto que entre en efecto Taproot, una actualización para Bitcoin que promete <strong>un salto en privacidad y eficiencia de las transacciones</strong>.  </p>
+<!-- BREAK 1 -->
+<p>Fue en 2015 cuando se propuso <a href="https://www.xataka.com/criptomonedas/la-caida-de-valor-de-bitcoin-tiene-un-lado-positivo-las-comisiones-para-operar-estan-en-minimos-historicos">Segwit</a> (Segregated Witness), una ligera variación del Bitcoin que permitía "relajar" la carga de red. Este año entrará en acción otra de estas actualizaciones 'soft work'. Taproot ha sido aceptada estos días por la comunidad Bitcoin y llegará con importantes cambios. Os explicamos en qué consisten. </p>
+<!-- BREAK 2 --> <div id="div-gpt-out" style="width:1px; height:1px;">
+  <script>
+   googletag.cmd.push(function() { googletag.display("div-gpt-out"); });
+  </script>
+ </div>
+
+<!--more-->
+
+<div class="desvio-container">
+ <div class="desvio">
+  <div class="desvio-figure js-desvio-figure">
+   <a href="https://www.xataka.com/criptomonedas/bitcoin-tiene-problema-privacidad-cuando-te-envian-dinero-estos-servicios-sirven-para-ocultar-transferencias">
+    <img src="https://i.blogs.es/8d8546/btc1/375_142.jpeg" alt="Bitcoin tiene un problema de privacidad cuando te envían dinero: estos servicios sirven para ocultar las transferencias ">
+   </a>
+  </div>
+  <div class="desvio-summary">
+   <div class="desvio-taxonomy js-desvio-taxonomy">
+    <a href="https://www.xataka.com/criptomonedas/bitcoin-tiene-problema-privacidad-cuando-te-envian-dinero-estos-servicios-sirven-para-ocultar-transferencias" class="desvio-taxonomy-anchor">En Xataka</a>
+   </div>
+   <a href="https://www.xataka.com/criptomonedas/bitcoin-tiene-problema-privacidad-cuando-te-envian-dinero-estos-servicios-sirven-para-ocultar-transferencias" class="desvio-title js-desvio-title">Bitcoin tiene un problema de privacidad cuando te envían dinero: estos servicios sirven para ocultar las transferencias </a>
+  </div>
+ </div>
+</div>
+
+<p>Según describe <a href="https://cointelegraph.com/news/bitcoin-taproot-upgrade-finally-locked-in-activation-set-for-november">Pieter Wuille</a>, uno de los desarrolladores del núcleo de Bitcoin: "la activación es automática <strong>a la altura del bloque 709632; se espera alrededor del 14 de noviembre de 2021</strong>. Taproot es el primer cambio de consenso desde que Segwit se activó en agosto de 2017". </p>
+<!-- BREAK 3 -->
+<div class="article-asset-video article-asset-large">
+ <div class="asset-content">
+  <div class="base-asset-video">
+       <div class="js-dailymotion">
+    <script type="application/json">
+     {"videoId":"x801dhd","autoplay":true,"title":"Cómo comprar Bitcoins de forma segura y sin riesgo"}
+    </script>
+    </div>
+  </div>
+ </div>
+</div>
+
+<h2>Qué cambia en Bitcoin con Taproot</h2>
+
+<p>El principal cambio de Bitcoin está relacionado con la huella digital que deja cada persona en la transacción. A partir de noviembre se cambiará a las <a href="https://academy.bit2me.com/que-son-las-firmas-schnorr/">firmas Schnorr</a>, que permiten <strong>hacer ilegibles las transacciones de múltiples firmas</strong>. </p>
+<!-- BREAK 4 -->
+<p>Actualmente Bitcoin utiliza un algoritmo de signatura digital creado a partir de la llave privada, la secuencia única relacionada con cada transacción. Al ser estar basado en blockchain y ser público, cualquier persona puede monitorizar esa transacción. Ahora desde Bitcoin buscan mejorar en privacidad con <a href="https://medium.com/coinmonks/an-introduction-guide-on-bitcoin-taproot-7a8e0f06af8e">P2SH y MAST</a>. </p>
+<!-- BREAK 5 -->
+<p>Taproot permitirá "ocultar" las partes móviles y añadidas de una transacción múltiple para que parezcan una única transacción. Es decir, en las operaciones complejas se unificará bajo un mismo identificador la información, lo que permitirá <strong>añadir más privacidad en algunos aspectos, manteniendo la referencia pública</strong>. </p>
+<!-- BREAK 6 -->
+<div class="article-asset-image article-asset-normal"><div class="asset-content"> <div class="caption-img  "> <div class="base-wrapper-image" style="padding-top: 37.688442211055%;"> <img class="sf-lazy centro_sinmarco"  data-sf-srcset="https://i.blogs.es/55c415/bitcoin-mast/450_1000.png 450w, https://i.blogs.es/55c415/bitcoin-mast/650_1200.png 681w, https://i.blogs.es/55c415/bitcoin-mast/1024_2000.png 1024w, https://i.blogs.es/55c415/bitcoin-mast/1366_2000.png 1366w" data-sf-src="https://i.blogs.es/55c415/bitcoin-mast/450_1000.png" alt="Bitcoin Mast"><noscript><img alt="Bitcoin Mast" src="https://i.blogs.es/55c415/bitcoin-mast/450_1000.png"></noscript> </div> <span> Con MAST, estas tres operaciones resultarán idénticas públicamente. Imagen: <a href="https://bitcointechtalk.com/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast-33fdf2da5e2f">BitcoinTechTalk</a> </span> </div></div></div>
+
+<p>La actualización promete una mejora en la eficiencia al <strong>reducir la cantidad de datos que se transferirán y almacenarán en la cadena de bloques</strong>. Es decir, la información de cada bloque estará mejor comprimida. También habrá una mayor tasa de transacciones por bloque, lo que al final derivará en <strong>tasas de transacción más bajas</strong>. </p>
+<!-- BREAK 7 -->
+<p><blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">At the time there were so many ideas even for &quot;structural&quot; Script improvements (not counting ideas for new opcodes); there was cross-input signature aggregation, graftroot, g&#39;root, of course Taproot itself, ...<br><br>Initially my hope was to create one proposal that did all of them.</p>&mdash; Pieter Wuille (@pwuille) <a href="https://twitter.com/pwuille/status/1403728469863768071?ref_src=twsrc%5Etfw">June 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<!-- BREAK 8 -->
+<p>A nivel de seguridad, <strong>las firmas dejarán de ser "maleables"</strong>. En estos momentos es técnicamente posible modificar la firma antes de que la transacción se confirme, lo que expone a posibles ataques. Con Taproot, esto cambiará lo que añadirá una capa más de seguridad a Bitcoin. </p>
+<!-- BREAK 9 -->
+<h2>Acercándose a Ethereum con los 'smart contracts'</h2>
+
+<p>Los 'smart contracts' son scripts, códigos asociados al dinero. La base para poder crear aplicaciones y herramientas basadas en blockchain. Aquí pese a que el Bitcoin es la criptomoneda más popular, en este campo <a href="https://www.xataka.com/criptomonedas/que-ethereum-2-0-criptodivisa-renace-nueva-cadena-bloques-transacciones-adios-a-mineria-gpus">Ethereum y su futura versión 2.0</a> llevan ventaja. </p>
+<!-- BREAK 10 -->
+<div class="desvio-container">
+ <div class="desvio">
+  <div class="desvio-figure js-desvio-figure">
+   <a href="https://www.xataka.com/empresas-y-economia/por-que-los-programadores-amamos-ethereum">
+    <img src="https://i.blogs.es/f8aedc/programar-ethereum/375_142.jpg" alt="Por qué los programadores amamos Ethereum">
+   </a>
+  </div>
+  <div class="desvio-summary">
+   <div class="desvio-taxonomy js-desvio-taxonomy">
+    <a href="https://www.xataka.com/empresas-y-economia/por-que-los-programadores-amamos-ethereum" class="desvio-taxonomy-anchor">En Xataka</a>
+   </div>
+   <a href="https://www.xataka.com/empresas-y-economia/por-que-los-programadores-amamos-ethereum" class="desvio-title js-desvio-title">Por qué los programadores amamos Ethereum</a>
+  </div>
+ </div>
+</div>
+
+<p>Bitcoin quiere recortar esta diferencia. Con la mejora en eficiencia de los bloques, Bitcoin quiere mejorar su potencial en el <a href="https://www.xataka.com/basics/criptomonedas-que-como-funcionan-que-otras-existen-bitcoin">mundo de las finanzas decentralizadas (DeFi)</a>. Una posición de la que ahora está muy lejos, donde la mayoría de expertos coinciden que <strong>Bitcoin requiere de demasiados recursos y tiempo para implementar estos 'smart contracts'</strong>. </p>
+<!-- BREAK 11 -->
+<p>El mundo de las criptomonedas se mueve a un ritmo endiablado. Afortunadamente, los avances y movimientos no solo vienen desde el lado financiero, también hay un gran trabajo en la tecnología que hay detrás. </p>
+<!-- BREAK 12 -->
+<p>En Xataka | <a href="https://www.xataka.com/basics/como-comprar-bitcoins-de-forma-segura-y-sin-riesgo">Cómo comprar Bitcoins de forma segura y sin riesgo</a></p>
+<!-- BREAK 13 --> </div>
+            
+                      <div class="article-links">
+ <div class="article-links-inner">
+  <div class="article-social-share js-article-social-share m-in-links">
+   <p>
+    Compartir
+    <q class="article-social-share-meta">
+           Bitcoin se actualizará cuatro años después: cómo funciona Taproot y qué cambios se esperan a partir de noviembre
+         </q>
+   </p>
+       <ul>
+ <li><a href="http://www.facebook.com/dialog/feed?app_id=355823546895&redirect_uri=https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb&link=https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb" class="btn-facebook js-btn-facebook" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">Facebook</a></li>
+ <li><a href="https://twitter.com/intent/tweet?url=https://www.xataka.com/p/234578%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb&text=Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre&via=xataka" class="btn-twitter js-btn-twitter" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">Twitter</a></li>
+   <li><a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre&url=https%3A%2F%2Fwww.xataka.com%2Fcriptomonedas%2Fbitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Dflipboard%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb" class="btn-flipboard js-flipboard-share-button js-flipboard-share-event" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">Flipboard</a></li>
+  <li><a href="mailto:?subject=Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre&body=https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Demailsharing%26utm_medium%3Demail%26utm_content%3DPOST%26utm_campaign%3Dbotoneraweb%26utm_term%3DCLICK%2BON%2BTITLE" class="btn-email js-btn-email" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">E-mail</a></li>
+</ul>
+     </div>
+     <div class="article-topics-list">
+ <span class="article-topic-desc">Temas</span>
+ <ul class="article-topics-categories">
+     <li><a class="article-topic-link" href="/categoria/criptomonedas">Criptomonedas</a></li>
+   </ul>
+ <ul class="article-topics-tags">
+     <li><a class="article-topic-link" href="/tag/bitcoin">Bitcoin</a></li>
+     <li><a class="article-topic-link" href="/tag/bitcoin-moneda-p2p">Bitcoin moneda P2P</a></li>
+     <li><a class="article-topic-link" href="/tag/blockchain">blockchain</a></li>
+   </ul>
+</div>
+   </div>
+</div>
+          </div>
+         </div>
+         <div class="article-content-outer">
+          <div class="article-social-share js-article-social-share m-in-normal">
+           <p>Compartir</p>
+           <ul>
+ <li><a href="http://www.facebook.com/dialog/feed?app_id=355823546895&redirect_uri=https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb&link=https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb" class="btn-facebook js-btn-facebook" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">Facebook</a></li>
+ <li><a href="https://twitter.com/intent/tweet?url=https://www.xataka.com/p/234578%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb&text=Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre&via=xataka" class="btn-twitter js-btn-twitter" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">Twitter</a></li>
+   <li><a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre&url=https%3A%2F%2Fwww.xataka.com%2Fcriptomonedas%2Fbitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Dflipboard%26utm_medium%3Dsocial%26utm_campaign%3Dbotoneraweb" class="btn-flipboard js-flipboard-share-button js-flipboard-share-event" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">Flipboard</a></li>
+  <li><a href="mailto:?subject=Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre&body=https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre%3Futm_source%3Demailsharing%26utm_medium%3Demail%26utm_content%3DPOST%26utm_campaign%3Dbotoneraweb%26utm_term%3DCLICK%2BON%2BTITLE" class="btn-email js-btn-email" data-postname="bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre">E-mail</a></li>
+</ul>
+          </div>
+         </div>
+        </div>
+       </article>
+         <div class="ad-gage-container">
+  <div class="ad-gage-inner">
+   <div class="ad-gage">
+    <div id="M669898ScriptRootC1056107"></div>
+    <script src="https://jsc.adgage.es/x/a/xataka.com.1056107.js" async></script>
+   </div>
+  </div>
+ </div>
+               <div class="ad ad-cen">
+  <div class="ad-box" id="div-gpt-cen">
+   <script>
+    googletag.cmd.push(function() { googletag.display("div-gpt-cen"); });
+   </script>
+  </div>
+ </div>
+       <div id="recommendedPosts" class="section-related"></div>
+<script>
+  window.WSLModules = window.WSLModules || {};
+  WSLModules.recommendation = {'moduleConf' : 'Amplify'};
+</script>
+       <script>
+ window.WSLModules || (window.WSLModules = {});
+ WSLModules.Comments || (WSLModules.Comments = {
+   'moduleConf' : 'c9'
+ });
+</script>
+<a id="to-comments"></a>
+<div id="comments">
+ <div class="comment-section">
+     <div id="main-container" class="comment-section">
+  <div id="common-container">
+   <div class="comment-wrapper initial-comments" style="display:none">
+    <div class="comments-list">
+     <p>Los mejores comentarios:</p>
+     <ul id="initial-comments"></ul>
+    </div>
+   </div>
+   <div class="view-more">
+    <p><a class="btn-primary btn-comment js-toggle-comments-list is-closed" href="#" id="toggle-comments">Ver <span id="comment-count">43 comentarios</span></a></p>
+   </div>
+   <div id="comment-wrapper" class="comment-wrapper comment-wrapper-aside">
+    <div id="comments-area" class="comments-list" style="display: none;">
+     <div id="comment-header"></div>
+     <div id="comments-write-form" class="comment-write-form" style="display: none;"></div>
+     <!-- .comment-write-form -->
+     <ul id="comments-before-ad"></ul>
+          <ul id="comments-list"></ul>
+     <div class="view-even-more"></div>
+     <div id="bottom-create-comment-widget" class="article-comments-write article-comments-write-again"></div>
+     <div id="bottom-comments-write-form" class="comment-write-form" style="display: none;"></div>
+    </div>
+   </div>
+  </div>
+ </div>
+<script>
+  window.AML || (window.AML = {});
+  AML.Comments || (AML.Comments = {});
+  AML.Comments.config || (AML.Comments.config = {});
+  AML.Comments.config.data = {"comments":[{"id":"1687557","post_id":"234578","date":1624210007,"content_filtered":"<p>Muy bien el art\u00edculo, a ver si empezamos a ver m\u00e1s art\u00edculos sobre Bitcoin referentes a su tecnolog\u00eda y no entorno a su precio y otras noticias sensacionalistas.<\/p><p>Nota: Pero me se\u00e1is portugueses: \"algoritmo de signatura digital\" ser\u00eda mejor traducirlo por \"algoritmo de firma digital\"<\/p>","content":"Muy bien el art\u00edculo, a ver si empezamos a ver m\u00e1s art\u00edculos sobre Bitcoin referentes a su tecnolog\u00eda y no entorno a su precio y otras noticias sensacionalistas.\n\nNota: Pero me se\u00e1is portugueses: \"algoritmo de signatura digital\" ser\u00eda mejor traducirlo por \"algoritmo de firma digital\"","karma":"253.75","parent":"0","comment_edited_date":"","vote_count":"18","comment_level":1,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"147444","author":"","webpage":"","user_name":"elbaina","karma_level":"45.00","iseditor":"0","global_id":"895975","facebook_uid":null,"user_status":"active","index":2,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/64fc0e23f2650e9d0c93d188ad99acce"},{"id":"1687572","post_id":"234578","date":1624215434,"content_filtered":"<p>Es que no hay mucha tecnolog\u00eda detr\u00e1s del Bitcoin, salvo el blockchain en que se basa y que no es invento de ellos.<\/p><p>Lo que s\u00ed me llama la atenci\u00f3n son los vacios detr\u00e1s del Bitcoin, que no se sabe de su creador, pero hay un equipo que decide sus actualizaciones y lo maneja en las sombras.<\/p>","content":"Es que no hay mucha tecnolog\u00eda detr\u00e1s del Bitcoin, salvo el blockchain en que se basa y que no es invento de ellos.\n\nLo que s\u00ed me llama la atenci\u00f3n son los vacios detr\u00e1s del Bitcoin, que no se sabe de su creador, pero hay un equipo que decide sus actualizaciones y lo maneja en las sombras.","karma":"27.50","parent":"1687557","comment_edited_date":1624215464,"vote_count":"14","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":5,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687616","post_id":"234578","date":1624225943,"content_filtered":"<p>\u00bfA qu\u00e9 te refieres con un equipo que decide sus actualizaciones y lo maneja en las sombras?<\/p><p>No se sabe de su creador, pero eso es t\u00e9cnicamente irrelevante; es c\u00f3digo abierto y cualquiera puede revisarlo o incluso hacerle fork para construir otra cadena (como Litecoin y Doge que son forks de Bitcoin).<\/p><p>Y el equipo que \"lo maneja en las sombras\" son los mineros y holders de btc que necesitan llegar a consenso para realizar cualquier cambio.<\/p>","content":"\u00bfA qu\u00e9 te refieres con un equipo que decide sus actualizaciones y lo maneja en las sombras?\n\nNo se sabe de su creador, pero eso es t\u00e9cnicamente irrelevante; es c\u00f3digo abierto y cualquiera puede revisarlo o incluso hacerle fork para construir otra cadena (como Litecoin y Doge que son forks de Bitcoin).\n\nY el equipo que \"lo maneja en las sombras\" son los mineros y holders de btc que necesitan llegar a consenso para realizar cualquier cambio.","karma":"99.25","parent":"1687572","comment_edited_date":"","vote_count":"8","comment_level":2,"comment_deleted_date":"","tree_level":"2","comment_approved":"1","comment_author":"","user_id":"170680","author":"","webpage":"","user_name":"cloudx5","karma_level":"22.00","iseditor":"0","global_id":"1017845","facebook_uid":"1921762744575851","user_status":"active","index":15,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/1921762744575851\/picture"},{"id":"1688286","post_id":"234578","date":1624367337,"content_filtered":"<p>No existe una fundaci\u00f3n ni directorio, no hay cabeza ni hay reglas democr\u00e1ticas para elegir nada.<\/p><p>Todo lo manejan los \"Holders de Btc\" que son es eslab\u00f3n mas oscuro de todos, especuladores que acaparan para revender, ellos manejan el Bitcoin con criterio especulativo y deciden que se hace.<\/p>","content":"No existe una fundaci\u00f3n ni directorio, no hay cabeza ni hay reglas democr\u00e1ticas para elegir nada.\n\nTodo lo manejan los \"Holders de Btc\" que son es eslab\u00f3n mas oscuro de todos, especuladores que acaparan para revender, ellos manejan el Bitcoin con criterio especulativo y deciden que se hace.\n\n","karma":"10.00","parent":"1687616","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":39,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687748","post_id":"234578","date":1624269811,"content_filtered":"<p>No sabes nada, y por eso hablas tanto.<\/p><p>No hay ning\u00fan equipo detr\u00e1s. Los usuarios son los que \"deciden\", deber\u00edas investigar m\u00e1s c\u00f3mo funciona blockchain para saber qu\u00e9 quiere decir eso.<\/p>","content":"No sabes nada, y por eso hablas tanto.\n\nNo hay ning\u00fan equipo detr\u00e1s. Los usuarios son los que \"deciden\", deber\u00edas investigar m\u00e1s c\u00f3mo funciona blockchain para saber qu\u00e9 quiere decir eso.","karma":"16.25","parent":"1687572","comment_edited_date":"","vote_count":"2","comment_level":3,"comment_deleted_date":"","tree_level":"2","comment_approved":"1","comment_author":"","user_id":"193056","author":"","webpage":"","user_name":"xagaroo","karma_level":"46.00","iseditor":"0","global_id":"177089","facebook_uid":"10208662096003996","user_status":"active","index":33,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/10208662096003996\/picture"},{"id":"1688292","post_id":"234578","date":1624367995,"content_filtered":"<p>\"No hay ning\u00fan equipo detr\u00e1s.\"<\/p><p>Si se decidi\u00f3 aplicar una actualizaci\u00f3n es porque obviamente hay un equipo detr\u00e1s que decide y lo controla. <\/p><p>Y confundes Bitcoin con Blockchain. Bitcoin es un sofware especulativo que se cre\u00f3 con blockchain. De hecho bitcoin como software es una aberraci\u00f3n porque es sumamente ineficiente en recursos y uso de energia.<br \/>\n<\/p>","content":"\"No hay ning\u00fan equipo detr\u00e1s.\"\n\nSi se decidi\u00f3 aplicar una actualizaci\u00f3n es porque obviamente hay  un equipo detr\u00e1s que decide y lo controla. \n\nY confundes Bitcoin con Blockchain. Bitcoin es un sofware especulativo que se cre\u00f3 con blockchain. De hecho bitcoin como software es una aberraci\u00f3n porque es sumamente ineficiente en recursos y uso de energia.\n","karma":"25.00","parent":"1687748","comment_edited_date":1624368020,"vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":40,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687773","post_id":"234578","date":1624273772,"content_filtered":"<p>A mi tambien me mosquea bastante que no existan responsables identificados.<\/p>","content":"A mi tambien me mosquea bastante que no existan responsables identificados.","karma":"13.75","parent":"1687572","comment_edited_date":"","vote_count":"3","comment_level":3,"comment_deleted_date":"","tree_level":"2","comment_approved":"1","comment_author":"","user_id":"30959","author":"Juanki","webpage":"","user_name":"juankichu","karma_level":"54.00","iseditor":"0","global_id":"30693","facebook_uid":null,"user_status":"active","index":34,"avatar_type":"wsl","avatar_link":"\/\/img.weblogssl.com\/avatar\/mini\/30693_1.png"},{"id":"1688296","post_id":"234578","date":1624368205,"content_filtered":"<p>Si, por ejemplo Linux tiene una fundaci\u00f3n transparente que se sabe quienes son y que hacen, en cambio Bitcoin lo manejan en las somrbas y lo venden como libre cuando solo sirve a especuladores y Holders.<\/p>","content":"Si, por ejemplo Linux tiene una fundaci\u00f3n transparente que se sabe quienes son y que hacen, en cambio Bitcoin lo manejan en las somrbas y lo venden como libre cuando solo sirve a especuladores y Holders.","karma":"10.00","parent":"1687773","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":41,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687589","post_id":"234578","date":1624220011,"content_filtered":"<p>mal, tienen que hablar de otras Cryptos, Bitcoin est\u00e1 CENTRALIZADO y Manipulado , todo lo contrario por lo que fu\u00e9 creado, lo explican bien en el FAQ de CHIA, si ustedes creen que va a pasar de los 100k lo llevan claro.<\/p><p>A dia de hoy BTC esta perdiendo Dominancia y ha de perder mas para que no pueda mover las demas Cryptos, por eso las Multinacionales compran BTC pq si Manipulan BTC manipulan las demas en movimiento, <\/p><p>PD soy minero y amos el mundo cripto, esto no es Hate, es ser realista, si eres fan de BTC no tienes ni Pu Idea y vas a perder tu dinero. <\/p><p>BYE<\/p>","content":"mal, tienen que hablar de otras Cryptos, Bitcoin est\u00e1 CENTRALIZADO y Manipulado , todo lo contrario por lo que fu\u00e9 creado, lo explican bien en el FAQ de CHIA, si ustedes creen que va a pasar de los 100k lo llevan claro.\n\nA dia de hoy BTC esta perdiendo Dominancia y ha de perder mas para que no pueda mover las demas Cryptos, por eso las Multinacionales compran BTC pq si Manipulan BTC manipulan las demas en movimiento, \n\nPD soy minero y amos el mundo cripto, esto no es Hate, es ser realista, si eres fan de BTC no tienes ni Pu Idea y vas a perder tu dinero. \n\nBYE","karma":"-3.75","parent":"1687572","comment_edited_date":"","vote_count":"11","comment_level":4,"comment_deleted_date":"","tree_level":"2","comment_approved":"1","comment_author":"","user_id":"227706","author":"","webpage":"","user_name":"imbiganduknowit","karma_level":"17.00","iseditor":"0","global_id":"1250202","facebook_uid":null,"user_status":"active","index":11,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/2ccbd7d1db7eaa5cd15a845be79f427d"},{"id":"1687648","post_id":"234578","date":1624241393,"content_filtered":"<p>Que es CHIA? Otra criptomoneda preminada lanzada para hacer ricos a sus creadores? Es increible que la gente siga comprando shitcoins en pleno 2021. <\/p>","content":"Que es CHIA? Otra criptomoneda preminada lanzada para hacer ricos a sus creadores? Es increible que la gente siga comprando shitcoins en pleno 2021. ","karma":"60.00","parent":"1687589","comment_edited_date":"","vote_count":"4","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"615563","author":"","webpage":"","user_name":"autoridad","karma_level":"1.00","iseditor":"0","global_id":"1390582","facebook_uid":null,"user_status":"active","index":21,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/215b7811975df20b0a2f204a4765821b"},{"id":"1687686","post_id":"234578","date":1624259867,"content_filtered":"<p>Chia no es shitcoin, por definicion. Tienes que aprender a distingir las altcoins de las shitcoins, y en breve CHIA sera de las principales.<\/p><p>Y no, no digo esto para que compreis CHIA, de ser principal a que se puda uno forrar hay una distancia. Digo esto porque CHIA requiere de ser minada ademas con un sistema unico. Es decir, CHIA esta respaldada por la propia inversion que ha supuesto su minado, que este solo ha hecho subir precios y reducido disponibilidad de discos duros. Lo que determina si algo es una shitcoin es basicamente su utilidad real y, ante todo, como se obtiene: normalmente monedas que ya desde el principio tienen disponible todo su volumen porque no requieren de minado como tal.<\/p>","content":"Chia no es shitcoin, por definicion. Tienes que aprender a distingir las altcoins de las shitcoins, y en breve CHIA sera de las principales.\n\nY no, no digo esto para que compreis CHIA, de ser principal a que se puda uno forrar hay una distancia. Digo esto porque CHIA requiere de ser minada ademas con un sistema unico. Es decir, CHIA esta respaldada por la propia inversion que ha supuesto su minado, que este solo ha hecho subir precios y reducido disponibilidad de discos duros.  Lo que determina si algo es una shitcoin es basicamente su utilidad real y, ante todo, como se obtiene: normalmente monedas que ya desde el principio tienen disponible todo su volumen porque no requieren de minado como tal.","karma":"1.25","parent":"1687648","comment_edited_date":"","vote_count":"3","comment_level":3,"comment_deleted_date":"","tree_level":"4","comment_approved":"1","comment_author":"","user_id":"38146","author":"","webpage":"","user_name":"royendershade","karma_level":"56.00","iseditor":"0","global_id":"98766","facebook_uid":null,"user_status":"active","index":27,"avatar_type":"wsl","avatar_link":"\/\/img.weblogssl.com\/avatar\/mini\/98766_1.png"},{"id":"1687726","post_id":"234578","date":1624266753,"content_filtered":"<p>.<\/p>","content":".","karma":"8.00","parent":"1687686","comment_edited_date":1624266884,"vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"5","comment_approved":"1","comment_author":"","user_id":"249277","author":"","webpage":"","user_name":"sunmoon","karma_level":"31.00","iseditor":"0","global_id":"1298286","facebook_uid":null,"user_status":"active","index":30,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/d1155edad3540fc380f26e348848da1c"},{"id":"1688000","post_id":"234578","date":1624304377,"content_filtered":"<p>En la misma FAQ de CHIA que mencionas dice que esta preminada. Es no es correcto moralmente desde ningun punto de vista. Si hay algo que tienen en comun las shitcoins es que todas fueron preminadas. <\/p>","content":"En la misma FAQ de CHIA que mencionas dice que esta preminada. Es no es correcto moralmente desde ningun punto de vista. Si hay algo que tienen en comun las shitcoins es que todas fueron preminadas. ","karma":"5.00","parent":"1687686","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"5","comment_approved":"1","comment_author":"","user_id":"615563","author":"","webpage":"","user_name":"autoridad","karma_level":"1.00","iseditor":"0","global_id":"1390582","facebook_uid":null,"user_status":"active","index":38,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/215b7811975df20b0a2f204a4765821b"},{"id":"1687661","post_id":"234578","date":1624254125,"content_filtered":"<p>Cuando vuelva al 60% de dominancia o m\u00e1s, pase los 100k que pasar\u00e1 tarde o temprano y la basura de Chia no valga nada que obviamente t\u00fa no has visto que pasa con las shitcoins cuando BTC cae de verdad (solo se consigue medio salvar ethereum), a ver donde te metes.<\/p><p>Con tanto novato no se puede, minero dices, ser\u00e1s minero de Chia o alguna mierda similar y llevar\u00e1s 2 meses.<\/p>","content":"Cuando vuelva al 60% de dominancia o m\u00e1s,  pase los 100k que pasar\u00e1 tarde o temprano y la basura de Chia no valga nada que obviamente t\u00fa no has visto que pasa con las shitcoins cuando BTC cae de verdad (solo se consigue medio salvar ethereum), a ver donde te metes.\n\nCon tanto novato no se puede, minero dices, ser\u00e1s minero de Chia o alguna mierda similar y llevar\u00e1s 2 meses.","karma":"18.00","parent":"1687589","comment_edited_date":1624254235,"vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"249277","author":"","webpage":"","user_name":"sunmoon","karma_level":"31.00","iseditor":"0","global_id":"1298286","facebook_uid":null,"user_status":"active","index":24,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/d1155edad3540fc380f26e348848da1c"},{"id":"1687671","post_id":"234578","date":1624257454,"content_filtered":"<p>\"Soy minero, esc\u00fachenme, s\u00e9 de lo que hablo.\"<\/p><p>El minero cu\u00f1ao eres.<\/p>","content":"\"Soy minero, esc\u00fachenme, s\u00e9 de lo que hablo.\"\n\nEl minero cu\u00f1ao eres.","karma":"18.00","parent":"1687589","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"327102","author":"","webpage":"","user_name":"jorah","karma_level":"28.00","iseditor":"0","global_id":"1363253","facebook_uid":null,"user_status":"active","index":26,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/f60e7762f067ed5b893a7733dd0a7487"},{"id":"1687605","post_id":"234578","date":1624222917,"content_filtered":"<p>Pues pa ser minero no tienes ni papa de lo que hablas \u00bfBitcoin perdiendo dominancia? Literalmente todas las monedas estan siguiendolo ahora mismo tanto cuando baja como cuando sube jajajajaja<br \/>\n<\/p>","content":"Pues pa ser minero no tienes ni papa de lo que hablas \u00bfBitcoin perdiendo dominancia? Literalmente todas las monedas estan siguiendolo ahora mismo tanto cuando baja como cuando sube jajajajaja\n","karma":"5.00","parent":"1687589","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"3","comment_approved":"1","comment_author":"","user_id":"583647","author":"","webpage":"","user_name":"tucolega","karma_level":"1.00","iseditor":"0","global_id":"1388318","facebook_uid":null,"user_status":"active","index":13,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/9331b92ff89b0bbba89f6dca4c4a2c8b"},{"id":"1687630","post_id":"234578","date":1624233359,"content_filtered":"<p>ves como no tienes ni idea? BTC ya esta en 45% de Dom, lleva meses bajando, tio, si no tienes ni idea de Crypto ni de trading pq hablais, dejen de Comprar BTC pq lo perderan todo y vayanse a otras cryptos como ETH, Holo ,Shiba Inu, Polygon, etc<\/p>","content":"ves como no tienes  ni idea? BTC ya esta en 45% de Dom, lleva meses bajando, tio, si no tienes ni idea de Crypto ni de trading pq hablais, dejen de Comprar BTC pq lo perderan todo y vayanse a otras cryptos como ETH, Holo ,Shiba Inu, Polygon, etc","karma":"28.75","parent":"1687605","comment_edited_date":"","vote_count":"7","comment_level":3,"comment_deleted_date":"","tree_level":"4","comment_approved":"1","comment_author":"","user_id":"227706","author":"","webpage":"","user_name":"imbiganduknowit","karma_level":"17.00","iseditor":"0","global_id":"1250202","facebook_uid":null,"user_status":"active","index":17,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/2ccbd7d1db7eaa5cd15a845be79f427d"},{"id":"1687645","post_id":"234578","date":1624240648,"content_filtered":"<p>Soy minero: tiene CHIA<br \/>\nRecomienda cambiar Bitcoin por SHIBA<\/p><p>Todo al rev\u00e9s entendiste:<\/p><p>Bitcoin es, fu\u00e9 y ser\u00e1 LA NUMERO UNO<br \/>\nNO PUEDES estar en cripto y NO TENER BITCOIN<br \/>\nTe toca leer (y MUCHISIMO)<\/p>","content":"Soy minero: tiene CHIA\nRecomienda cambiar Bitcoin por SHIBA\n\nTodo al rev\u00e9s entendiste:\n\nBitcoin es, fu\u00e9 y ser\u00e1 LA NUMERO UNO\nNO PUEDES estar en cripto y NO TENER BITCOIN\nTe toca leer (y MUCHISIMO)","karma":"58.00","parent":"1687630","comment_edited_date":"","vote_count":"3","comment_level":3,"comment_deleted_date":"","tree_level":"5","comment_approved":"1","comment_author":"","user_id":"95121","author":"","webpage":"","user_name":"doncar","karma_level":"39.00","iseditor":"0","global_id":"521531","facebook_uid":"1406206939","user_status":"active","index":19,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/1406206939\/picture"},{"id":"1687687","post_id":"234578","date":1624260002,"content_filtered":"<p>Si puedes, entre otras cosas porque el margen que ofrece bitcoin en los mejores escenarios es bastante limitado a dia de hoy, y las transacciones muy lentas.<br \/>\nYo no tengo bitcoin y no lo voy a tener salvo que alcance un volumen de usuarios mucho mayor, y solo lo tendria para almacenar valor temporalmente.<\/p>","content":"Si puedes, entre otras cosas porque el margen que ofrece bitcoin en los mejores escenarios es bastante limitado a dia de hoy, y las transacciones muy lentas.\nYo no tengo bitcoin y no lo voy a tener salvo que alcance un volumen de usuarios mucho mayor, y solo lo tendria para almacenar valor temporalmente.","karma":"10.00","parent":"1687645","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"6","comment_approved":"1","comment_author":"","user_id":"38146","author":"","webpage":"","user_name":"royendershade","karma_level":"56.00","iseditor":"0","global_id":"98766","facebook_uid":null,"user_status":"active","index":28,"avatar_type":"wsl","avatar_link":"\/\/img.weblogssl.com\/avatar\/mini\/98766_1.png"},{"id":"1687724","post_id":"234578","date":1624266565,"content_filtered":"<p>eres un novato, BTC est\u00e1 totalmente centralizado y manipulado y se ha vuelto TODO POR LO QUE BTC QUISO LUCHAR EN CONTRA y lo dicen muchos desarrolladores de DEFY , Shiba es un proyecto solido como Holo o ETH, la verdad, me da bien igual que me creas, si baja BTC es porque ya la gente se est\u00e1 dando cuenta de la centralizacion Minera de y manipulacion Empresarial por AntMiner y las pool chinas , la verdad, no vengo aqui de ir de sabiondo, el que vas a perder dinero eres tu, no yo. Yo ya he avisado, yo he tenido mas BTC que todos vosotros juntos y no tengo ya por eso mismo, los que estamos en Crypto y mineros Profesionales que estamos desde el 2016 bien lo sabe,os, Real Crypto DesCent y Defi, amamos la Economia DESCENTRALIZADA sin la Manipulacion, Good luck newbie, la vas a necesitar<\/p>","content":"eres un novato,  BTC est\u00e1 totalmente centralizado y manipulado y se ha vuelto TODO POR LO QUE BTC QUISO LUCHAR EN CONTRA y lo dicen muchos desarrolladores de DEFY , Shiba es un proyecto solido como Holo o ETH, la verdad, me da bien igual que me creas, si baja BTC es porque ya la gente se est\u00e1 dando cuenta de la centralizacion Minera de y manipulacion Empresarial por AntMiner y las pool chinas ,  la verdad, no vengo aqui de ir de sabiondo, el que vas a perder dinero eres tu, no yo. Yo ya he avisado, yo he tenido mas BTC que todos vosotros juntos y no tengo ya por eso mismo, los que estamos en Crypto y mineros Profesionales que estamos desde el 2016 bien lo sabe,os, Real Crypto DesCent y Defi, amamos la Economia DESCENTRALIZADA sin la Manipulacion, Good luck newbie, la vas a necesitar","karma":"0.00","parent":"1687645","comment_edited_date":1624266909,"vote_count":"2","comment_level":3,"comment_deleted_date":"","tree_level":"6","comment_approved":"1","comment_author":"","user_id":"227706","author":"","webpage":"","user_name":"imbiganduknowit","karma_level":"17.00","iseditor":"0","global_id":"1250202","facebook_uid":null,"user_status":"active","index":29,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/2ccbd7d1db7eaa5cd15a845be79f427d"},{"id":"1687655","post_id":"234578","date":1624247250,"content_filtered":"<p>Que recomiendes Ethereum, Holochain y Polygon, es una cosa, \u00bfPero que recomiendes una moneda tan centralizada por ballenas como Shiba Inu, que aparte es un meme?<\/p>","content":"Que recomiendes Ethereum, Holochain y Polygon, es una cosa, \u00bfPero que recomiendes una moneda tan centralizada por ballenas como Shiba Inu, que aparte es un meme?","karma":"33.00","parent":"1687630","comment_edited_date":"","vote_count":"2","comment_level":3,"comment_deleted_date":"","tree_level":"5","comment_approved":"1","comment_author":"","user_id":"243757","author":"","webpage":"","user_name":"soulman","karma_level":"22.00","iseditor":"0","global_id":"1300873","facebook_uid":null,"user_status":"active","index":23,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/e30c3913db58691d07aa2c2123c9618d"},{"id":"1687850","post_id":"234578","date":1624283453,"content_filtered":"<p>Pues Doge es un meme y m\u00edralo, a la luna que va a ir.<br \/>\nAl final todo depende de si a la gente le gusta o no, es as\u00ed de primario.<\/p>","content":"Pues Doge es un meme y m\u00edralo, a la luna que va a ir.\nAl final todo depende de si a la gente le gusta o no, es as\u00ed de primario.","karma":"8.00","parent":"1687655","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"6","comment_approved":"1","comment_author":"","user_id":"230638","author":"chuskipituski","webpage":"","user_name":"ojcarff","karma_level":"33.00","iseditor":"0","global_id":"1259697","facebook_uid":null,"user_status":"active","index":36,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/3460dbd085794e105d15209c0b311592"},{"id":"1687727","post_id":"234578","date":1624266802,"content_filtered":"<p>Ves? si es que no sabeis, Shiba Inu no es un Meme tiene proyecto DEFI, Doge SI es un meme, <\/p>","content":"Ves? si es que no sabeis, Shiba Inu no es un Meme tiene proyecto DEFI, Doge SI es un meme, ","karma":"2.50","parent":"1687655","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"6","comment_approved":"1","comment_author":"","user_id":"227706","author":"","webpage":"","user_name":"imbiganduknowit","karma_level":"17.00","iseditor":"0","global_id":"1250202","facebook_uid":null,"user_status":"active","index":31,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/2ccbd7d1db7eaa5cd15a845be79f427d"},{"id":"1687644","post_id":"234578","date":1624240576,"content_filtered":"<p>Muchas gracias por el consejo!<\/p>","content":"Muchas gracias por el consejo!","karma":"7.50","parent":"1687630","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"5","comment_approved":"1","comment_author":"","user_id":"155577","author":"","webpage":"","user_name":"cabezonian","karma_level":"46.00","iseditor":"0","global_id":"942139","facebook_uid":null,"user_status":"active","index":18,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/b505f1e1351d38f3224f5982af2e94b0"},{"id":"1687847","post_id":"234578","date":1624283372,"content_filtered":"<p>Cambia Shiba por Doge y te lo compro.<br \/>\nCuando ETH pase a ETH2 y ya no se pueda minar, va a perder todo su atractivo y creo que se desplomar\u00e1<\/p>","content":"Cambia Shiba por Doge y te lo compro.\nCuando ETH pase a ETH2 y ya no se pueda minar, va a perder todo su atractivo y creo que se desplomar\u00e1","karma":"5.50","parent":"1687630","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"5","comment_approved":"1","comment_author":"","user_id":"230638","author":"chuskipituski","webpage":"","user_name":"ojcarff","karma_level":"33.00","iseditor":"0","global_id":"1259697","facebook_uid":null,"user_status":"active","index":35,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/3460dbd085794e105d15209c0b311592"},{"id":"1688315","post_id":"234578","date":1624369748,"content_filtered":"<p>Lo \u00fanico rescatable del bitcoin es el aprendizaje de como un sottware ineficiente y mal dise\u00f1ado puede causar un desastre ambiental.<\/p>","content":"Lo \u00fanico rescatable del bitcoin  es el aprendizaje de  como  un sottware ineficiente y mal dise\u00f1ado puede causar un desastre ambiental.","karma":"10.00","parent":"1687557","comment_edited_date":1624369762,"vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":43,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687556","post_id":"234578","date":1624209000,"content_filtered":"<p>moon<\/p>","content":"moon","karma":"63.00","parent":"0","comment_edited_date":"","vote_count":"3","comment_level":2,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"88721","author":"","webpage":"","user_name":"darkblade60","karma_level":"33.00","iseditor":"0","global_id":"475098","facebook_uid":"1495727626","user_status":"active","index":1,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/1495727626\/picture"},{"id":"1687559","post_id":"234578","date":1624211923,"content_filtered":"<p>Ethereum 2.0 y Cardano se llevar\u00e1n el pastel de los smart contracts. Bitcoin quedar\u00e1 en humo a largo plazo<\/p>","content":"Ethereum 2.0 y Cardano se llevar\u00e1n el pastel de los smart contracts. Bitcoin quedar\u00e1 en humo a largo plazo","karma":"27.50","parent":"0","comment_edited_date":"","vote_count":"6","comment_level":3,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"76195","author":"","webpage":"","user_name":"falconx","karma_level":"50.00","iseditor":"0","global_id":"403585","facebook_uid":null,"user_status":"active","index":3,"avatar_type":"wsl","avatar_link":"\/\/img.weblogssl.com\/avatar\/mini\/403585_2.png"},{"id":"1687746","post_id":"234578","date":1624269624,"content_filtered":"<p>Coincido en que son mejores. Pero Bitcoin seguir\u00e1 siendo para siempre la n\u00famero 1, por la misma raz\u00f3n que lo es Whatsapp vs Telegram a pesar de que la segunda opci\u00f3n es 1000000 veces mejor, y es s\u00f3lo por poner un ejemplo.<\/p>","content":"Coincido en que son mejores. Pero Bitcoin seguir\u00e1 siendo para siempre la n\u00famero 1, por la misma raz\u00f3n que lo es Whatsapp vs Telegram a pesar de que la segunda opci\u00f3n es 1000000 veces mejor, y es s\u00f3lo por poner un ejemplo.","karma":"20.00","parent":"1687559","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"193056","author":"","webpage":"","user_name":"xagaroo","karma_level":"46.00","iseditor":"0","global_id":"177089","facebook_uid":"10208662096003996","user_status":"active","index":32,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/10208662096003996\/picture"},{"id":"1687624","post_id":"234578","date":1624229698,"content_filtered":"<p>Ni en sue\u00f1os quiero que GAS lleve el primer puesto en los Contratos Inteligentes. Solo un loco quiere hacer transferencias con Ethereum con las disparatadas comisiones que cobra, prefiero mil veces la red TRON antes que GAS.<\/p>","content":"Ni en sue\u00f1os quiero que GAS lleve el primer puesto en los Contratos Inteligentes. Solo un loco quiere hacer transferencias con Ethereum con las disparatadas comisiones que cobra, prefiero mil veces la red TRON antes que GAS.","karma":"10.00","parent":"1687559","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"173841","author":"","webpage":"","user_name":"abelnightroad","karma_level":"43.00","iseditor":"0","global_id":"1001688","facebook_uid":null,"user_status":"active","index":16,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/82aaa3a6489d1088d6cf682d3018fc85"},{"id":"1687662","post_id":"234578","date":1624254443,"content_filtered":"<p>Si ethereum ya ha bajado much\u00edsimo las comisiones estas \u00faltimas semanas y lo que queda porque queda por salir optimism en julio y obviamente completar eth 2.0.<\/p>","content":"Si ethereum ya ha bajado much\u00edsimo las comisiones estas \u00faltimas semanas y lo que queda porque queda por salir optimism en julio y obviamente completar eth 2.0.","karma":"8.00","parent":"1687624","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"2","comment_approved":"1","comment_author":"","user_id":"249277","author":"","webpage":"","user_name":"sunmoon","karma_level":"31.00","iseditor":"0","global_id":"1298286","facebook_uid":null,"user_status":"active","index":25,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/d1155edad3540fc380f26e348848da1c"},{"id":"1687580","post_id":"234578","date":1624216858,"content_filtered":"<p>Menos mal que has le\u00eddo la noticia... <\/p>","content":"Menos mal que has le\u00eddo la noticia... ","karma":"8.00","parent":"1687559","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"279318","author":"KRSupman","webpage":"","user_name":"golraz2020","karma_level":"36.00","iseditor":"0","global_id":"1333755","facebook_uid":null,"user_status":"active","index":6,"avatar_type":"wsl","avatar_link":"\/\/img.weblogssl.com\/avatar\/mini\/1333755_2.png"},{"id":"1687602","post_id":"234578","date":1624222578,"content_filtered":"<p>Solana le est\u00e1 comiendo el pastel a ambos.<\/p>","content":"Solana le est\u00e1 comiendo el pastel a ambos.","karma":"8.00","parent":"1687559","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"243757","author":"","webpage":"","user_name":"soulman","karma_level":"22.00","iseditor":"0","global_id":"1300873","facebook_uid":null,"user_status":"active","index":12,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/e30c3913db58691d07aa2c2123c9618d"},{"id":"1687584","post_id":"234578","date":1624218423,"content_filtered":"<p>Para m\u00ed es una noticia buena no, magn\u00edfica, que los smart contract se incorporen al bitcoin. Convertir\u00e1 inmediatamente a la mejor criptomoneda en la protagonista de la mejor Defi.<br \/>\nHoy por hoy, a los que no conozcan el universo Defi baste decirles que la mejor moneda en esos ecosistemas, enti\u00e9ndase mejor como la m\u00e1s segura, es bitcoin. Hay cientos de proyectos y pares LP, muchos con rentabilidades b\u00e1rbaras en los que es f\u00e1cil picar, pero mi consejo a los novatos es que no hagan experimentos. Siempre BTC, y en segundo lugar, las monedas de plata BNB, ETH, MATIC, DOT, ADA, etc... <br \/>\nEsto de la Defi es un universo fascinante... pero a todo aquel que quiera meterse en el mundo cripto, el primer consejo y \u00fanico, es comprar bitcoin. A menudo estoy oyendo a gente que compra Doge pensando eso de \"ahora vale unos c\u00e9ntimos, pero cuando valga un par de cientos de d\u00f3lares, que no es nada, me forro\" Son CARNE DE CA\u00d1\u00d3N. Doge y muchas otras altcoins que valen casi nada son proyectos basura. (Al d\u00eda se emiten cientos de miles de tokens... y de Doge, por citar un ejemplo, hay m\u00e1s de 120 mil millones) No aportan nada, no sirven para nada especial, solo para que llegue un cantama\u00f1anas tipo Musk y se ponga a hacer tweets simp\u00e1ticos... y unos cuantos incautos le sigan la broma.<br \/>\nOjo en d\u00f3nde se invierte (sea en la bolsa o sea en cripto) y nunca m\u00e1s de lo debido.<\/p>","content":"Para m\u00ed es una noticia buena no, magn\u00edfica, que los smart contract se incorporen al bitcoin. Convertir\u00e1 inmediatamente a la mejor criptomoneda en la protagonista de la mejor Defi.\nHoy por hoy, a los que no conozcan el universo Defi baste decirles que la mejor moneda en esos ecosistemas, enti\u00e9ndase mejor como la m\u00e1s segura, es bitcoin. Hay cientos de proyectos y pares LP, muchos con rentabilidades b\u00e1rbaras en los que es f\u00e1cil picar, pero mi consejo a los novatos es que no hagan experimentos. Siempre BTC, y en segundo lugar, las monedas de plata BNB, ETH, MATIC, DOT, ADA, etc... \nEsto de la Defi es un universo fascinante... pero a todo aquel que quiera meterse en el mundo cripto, el primer consejo y \u00fanico, es comprar bitcoin. A menudo estoy oyendo a gente que compra Doge pensando eso de \"ahora vale unos c\u00e9ntimos, pero cuando valga un par de cientos de d\u00f3lares, que no es nada, me forro\" Son CARNE DE CA\u00d1\u00d3N. Doge y muchas otras altcoins que valen casi nada son proyectos basura. (Al d\u00eda se emiten cientos de miles de tokens... y de Doge, por citar un ejemplo, hay m\u00e1s de 120 mil millones) No aportan nada, no sirven para nada especial, solo para que llegue un cantama\u00f1anas tipo Musk y se ponga a hacer tweets simp\u00e1ticos... y unos cuantos incautos le sigan la broma.\nOjo en d\u00f3nde se invierte (sea en la bolsa o sea en cripto) y nunca m\u00e1s de lo debido.","karma":"20.00","parent":"0","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"207935","author":"Escepticum","webpage":"","user_name":"morfeo123","karma_level":"45.00","iseditor":"0","global_id":"1185306","facebook_uid":null,"user_status":"active","index":8,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/24efdf3ba1dfc702f012ebd7b80ab48a"},{"id":"1687606","post_id":"234578","date":1624223386,"content_filtered":"<p>Cual es el inter\u00e9s en que no se sepa que haces con el dinero, no lo digo por ti que lo usas para pagar comida, ropa y sercicios o porno, lo digo los mafiosos y criminales cuyo negocio ilegal se ve en riesgo por la trazabilidad del dinero en el sistema bancario tradicional. <\/p>","content":"Cual es el inter\u00e9s en que no se sepa que haces con el dinero, no lo digo por ti que lo usas para pagar comida, ropa y sercicios o porno, lo digo los mafiosos y criminales cuyo negocio ilegal se ve en riesgo por la trazabilidad del dinero en el sistema bancario tradicional. ","karma":"10.00","parent":"0","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"224921","author":"HAXNAGE","webpage":"","user_name":"dariopalacios","karma_level":"45.00","iseditor":"0","global_id":"1241263","facebook_uid":"10156548776149451","user_status":"active","index":14,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/10156548776149451\/picture"},{"id":"1687569","post_id":"234578","date":1624214916,"content_filtered":"<p>Y qui\u00e9n lo actualiza?<\/p>","content":"Y qui\u00e9n lo actualiza?","karma":"6.25","parent":"0","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":4,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687585","post_id":"234578","date":1624218610,"content_filtered":"<p>Los nodos actualizan el software. Lo mineros. <\/p>","content":"Los nodos actualizan el software. Lo mineros. ","karma":"30.00","parent":"1687569","comment_edited_date":"","vote_count":"1","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"110984","author":"","webpage":"","user_name":"lenkin","karma_level":"55.00","iseditor":"0","global_id":"614179","facebook_uid":null,"user_status":"active","index":9,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/0c58bf2b07880a6709105940502152bd"},{"id":"1687588","post_id":"234578","date":1624219957,"content_filtered":"<p>el 99% del bitcoin minado esta en el 10% de las carteras activas, se estima que hasta un 20% del total de los 21 millones que minara el sistema jamas, se han perdido, son inaccesibles aunque existan en el blockchain.<\/p><p>DeFi lo llaman... de ficci\u00f3n dir\u00e1n...<\/p>","content":"el 99% del bitcoin minado esta en el 10% de las carteras activas, se estima que hasta un 20% del total de los 21 millones que minara el sistema jamas, se han perdido, son inaccesibles aunque existan en el blockchain.\n\nDeFi lo llaman... de ficci\u00f3n dir\u00e1n...","karma":"5.00","parent":"0","comment_edited_date":"","vote_count":"5","comment_level":3,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"117515","author":"","webpage":"","user_name":null,"karma_level":"41.00","iseditor":"0","global_id":"334403","facebook_uid":null,"user_status":"active","index":10,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/529f90091a24ab09b8060b406aee6b57"},{"id":"1688303","post_id":"234578","date":1624368665,"content_filtered":"<p>Bitcoin se presentaba como la alternativa libre al dinero FIAT, pero es mas especulativa, mas inestable, mas concentrada y mas contaminante que el dinero formal.<\/p><p>Adem\u00e1s se presta para lavar dinero, asi que entre sus grandes \"holders\" est\u00e1n los carteles de droga y traficantes. En el fondo se dise\u00f1\u00f3 como un paraiso fiscal.<\/p>","content":"Bitcoin se presentaba como la alternativa libre al dinero FIAT, pero es mas especulativa, mas inestable, mas concentrada y mas contaminante que el dinero formal.\n\nAdem\u00e1s se presta para lavar dinero, asi que entre sus grandes \"holders\" est\u00e1n los carteles de droga y traficantes. En el fondo se dise\u00f1\u00f3 como un paraiso fiscal.","karma":"10.00","parent":"1687588","comment_edited_date":1624368811,"vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"205383","author":"","webpage":"","user_name":"miguelazo","karma_level":"47.00","iseditor":"0","global_id":"101835","facebook_uid":"413795879032026","user_status":"active","index":42,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/413795879032026\/picture"},{"id":"1687646","post_id":"234578","date":1624241103,"content_filtered":"<p>No entiendo que quieres explicar<\/p><p>Se mina pero se pierde? como se pierde?<\/p><p>Defi (por finanza descentralizada) De ficci\u00f3n parecen tus n\u00fameros sin fundamento<br \/>\n<\/p>","content":"No entiendo que quieres explicar\n\nSe mina pero se pierde? como se pierde?\n\nDefi (por finanza descentralizada) De ficci\u00f3n parecen tus n\u00fameros sin fundamento\n","karma":"8.00","parent":"1687588","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"1","comment_approved":"1","comment_author":"","user_id":"95121","author":"","webpage":"","user_name":"doncar","karma_level":"39.00","iseditor":"0","global_id":"521531","facebook_uid":"1406206939","user_status":"active","index":20,"avatar_type":"facebook","avatar_link":"\/\/graph.facebook.com\/1406206939\/picture"},{"id":"1687935","post_id":"234578","date":1624296184,"content_filtered":"<p><a rel=\"nofollow ugc\" href=\"https:\/\/www.diariobitcoin.com\/mercados\/bitcoin-mercados\/mas-del-99-del-suministro-actual-de-bitcoin-esta-en-manos-de-solo-el-10-de-las-direcciones-btc\/\">https:\/\/www.diariobitcoin.com\/mercados\/bitcoin-mercados\/mas-del-99-del-suministro-actual-de-bitcoin-esta-en-manos-de-solo-el-10-de-las-direcciones-btc\/<\/a><\/p><p><a rel=\"nofollow ugc\" href=\"https:\/\/hipertextual.com\/2017\/11\/casi-4-millones-bitcoin-se-han-perdido-siempre\">https:\/\/hipertextual.com\/2017\/11\/casi-4-millones-bitcoin-se-han-perdido-siempre<\/a><\/p><p>Lo peor es que esto es tan viejo que lo que sorprende es que haya gente que se cree que ha llegado en el momento justo para hacerse de oro.... Animo amigo, solo te queda pedir un cr\u00e9dito para invertir en criptos...<\/p>","content":"https:\/\/www.diariobitcoin.com\/mercados\/bitcoin-mercados\/mas-del-99-del-suministro-actual-de-bitcoin-esta-en-manos-de-solo-el-10-de-las-direcciones-btc\/\n\nhttps:\/\/hipertextual.com\/2017\/11\/casi-4-millones-bitcoin-se-han-perdido-siempre\n\nLo peor es que esto es tan viejo que lo que sorprende es que haya gente que se cree que ha llegado en el momento justo para hacerse de oro.... Animo amigo, solo te queda pedir un cr\u00e9dito para invertir en criptos...","karma":"10.00","parent":"1687646","comment_edited_date":"","vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"2","comment_approved":"1","comment_author":"","user_id":"117515","author":"","webpage":"","user_name":null,"karma_level":"41.00","iseditor":"0","global_id":"334403","facebook_uid":null,"user_status":"active","index":37,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/529f90091a24ab09b8060b406aee6b57"},{"id":"1687649","post_id":"234578","date":1624241958,"content_filtered":"<p>ADA is the way, tomen nota ya que en un par de a\u00f1os estar\u00e1 firme en el 3 lugar por capitalizaci\u00f3n de mercado.<\/p>","content":"ADA is the way, tomen nota ya que en un par de a\u00f1os estar\u00e1 firme en el 3 lugar por capitalizaci\u00f3n de mercado.","karma":"5.00","parent":"0","comment_edited_date":1624241965,"vote_count":"0","comment_level":3,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"467258","author":"","webpage":"","user_name":"adjsk","karma_level":"1.00","iseditor":"0","global_id":"1379853","facebook_uid":null,"user_status":"active","index":22,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/201c72eab170c56b048c5d505dcfda9a"},{"id":"1687581","post_id":"234578","date":1624217491,"content_filtered":"<p>la misma cagada con otro nombre<\/p>","content":"la misma cagada con otro nombre","karma":"-5.00","parent":"0","comment_edited_date":"","vote_count":"1","comment_level":4,"comment_deleted_date":"","tree_level":"0","comment_approved":"1","comment_author":"","user_id":"592638","author":"","webpage":"","user_name":"alberto2021","karma_level":"1.00","iseditor":"0","global_id":"1388972","facebook_uid":null,"user_status":"active","index":7,"avatar_type":"gravatar","avatar_link":"\/\/www.gravatar.com\/avatar\/9823030059e7cafd80c74c4bb1e32956"}],"meta":{"more_records":"false","start":0,"total":43,"order":"valued","totalCount":43,"commentStatus":"open"}};
+  AML.Comments.config.postId = 234578;
+  AML.Comments.config.enableSocialShare = "0";
+  AML.Comments.config.status = "open";
+  AML.Comments.config.campaignDate = "22_Jun_2021";
+  AML.Comments.config.enableImageUploading = "0";
+</script>
+
+ </div>
+</div>
+                <div class="ad ad-cen2">
+  <div class="ad-box" id="div-gpt-cen2">
+   <script>
+    googletag.cmd.push(function() { googletag.display("div-gpt-cen2"); });
+   </script>
+  </div>
+ </div>
+               <section id="editorialRecommendedPosts" class="section-related"></section>
+        <div class="ad ad-bot">
+  <div class="ad-box" id="div-gpt-bot2">
+   <script>
+    googletag.cmd.push(function() { googletag.display("div-gpt-bot2"); });
+   </script>
+  </div>
+ </div>
+        <div class="section-deeplinking-container">
+  <div class="section-deeplinking">
+   <span class="section-deeplinking-header">Temas de interés</span>
+   <ul class="section-deeplinking-list" id="js-evergreen-nav-links">
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/que-5g-que-diferencias-tiene-4g" class="section-deeplinking-anchor">
+       5G
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/analisis/mejores-moviles-ano-2020-sus-analisis-videos-estan-aqui" class="section-deeplinking-anchor">
+       mejores móviles
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/analisis/una-semana-en-la-deep-web-esto-es-lo-que-me-he-encontrado" class="section-deeplinking-anchor">
+       deep web
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/analisis/mejor-movil-xiaomi-calidad-precio-guia-compra-comparativa-1" class="section-deeplinking-anchor">
+       móviles Xiaomi
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/mejores-dns-2019" class="section-deeplinking-anchor">
+       mejores DNS
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/otros-dispositivos/amazon-fire-tv-stick-opiniones-analisis-6-meses-uso" class="section-deeplinking-anchor">
+       Fire Stick TV
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/como-actualizar-whatsapp-automaticamente-a-la-ultima-version-en-android" class="section-deeplinking-anchor">
+       Actualizar Whatsapp
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/como-actualizar-gratis-a-windows-10-con-licencia-de-windows-7-u-8-1-o-sin-ella" class="section-deeplinking-anchor">
+       Actualizar Windows 10
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/como-borrar-o-eliminar-una-cuenta-de-instagram-para-siempre" class="section-deeplinking-anchor">
+       Eliminar Instagram
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/127-plantillas-excel-para-organizarlo-todo" class="section-deeplinking-anchor">
+       Plantillas Excel
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/basics/plantillas-microsoft-powerpoint-para-organizarlo-todo" class="section-deeplinking-anchor">
+       Plantillas PowerPoint
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/seleccion/buscando-mejor-robot-aspirador-calidad-precio-recomendaciones-compra-funcion-uso-seis-modelos-destacados" class="section-deeplinking-anchor">
+       Mejor robot aspirador
+      </a>
+     </li>
+         <li class="section-deeplinking-item">
+      <a href="https://www.xataka.com/analisis/mejor-disco-duro-externo-2-5-guia-compra-comparativa" class="section-deeplinking-anchor">
+       mejor disco duro externo
+      </a>
+     </li>
+       </ul>
+   <div class="section-deeplinking-btn" id="js-evergreen-nav-btn"></div>
+  </div>
+ </div>
+      </main>
+      <section id="sections" class="head-menu-container head-menu-sections ">
+ <a href="#sections" class="head-menu-toggler js-toggle"></a>
+ <div class="head-menu">
+  <a href="#sections" class="close close-corner js-toggle js-menu-close">Inicio</a>
+  <div id="opt-in"></div>
+     <div class="head-menu-partners">
+    <p class="nav-heading">Partners</p>
+    <ul>
+           <li><a class="head-list-item head-brand-link head-brand-citroenelectricos js-track-header-event" href="/citroenelectricos">
+          ë-Citroën
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-e-movilidadopel js-track-header-event" href="/e-movilidadopel">
+          e-Movilidad Opel
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-e-motionpeugeot js-track-header-event" href="/e-motionpeugeot">
+          e-Motion Peugeot
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-tecnologialg js-track-header-event" href="/tecnologialg">
+          Innovación LG
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-realmetechlife js-track-header-event" href="/realmetechlife">
+          realme Tech Life
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-isdigital js-track-header-event" href="/isdigital">
+          ISDIgital
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-planetafantasy js-track-header-event" href="/planetafantasy">
+          Planeta Fantasy
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-solucionesitasseco js-track-header-event" href="/solucionesitasseco">
+          Soluciones IT Asseco
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-espaciosamsungs21 js-track-header-event" href="/espaciosamsungs21">
+          Espacio Samsung S21
+         </a></li>           <li><a class="head-list-item head-brand-link head-brand-programacionskylab js-track-header-event" href="/programacionskylab">
+          Programación Skylab
+         </a></li>         </ul>
+   </div>
+       <div class="head-menu-extras">
+    <p class="nav-heading">Destacamos</p>
+    <ul>
+                     <li><a class="head-list-item head-brand-link head-brand-tecnologiazen js-track-header-event" href="https://premios.xataka.com/">
+      Premios Xataka
+      </a></li>
+                          <li><a class="head-list-item head-brand-link head-brand-tecnologiazen js-track-header-event" href="/black-friday">
+      Black Friday
+      </a></li>
+         </ul>
+   </div>
+       <div id="sections-search"></div>
+   <script>
+    document.getElementById("sections-search").innerHTML = '\
+     <div class="head-menu-search">\
+      <div class="head-search-form js-search-form">\
+       <input id="search-field-1" type="text" placeholder="Buscar en Xataka" class="search-container-1" data-container="#search-container-1">\
+       <button class="head-search-button js-search-button" data-field="#search-field-1">Buscar</button>\
+      </div>\
+     </div>';
+   </script>
+    <div id="search-container-1" class="js-search-results"></div>
+    <div id="sections-login-wrapper" class="sections-login">
+   <div id="js-login" class="user-card"></div>
+  </div>
+  <nav class="head-menu-categories">
+    <ul>
+           <li><a class="head-list-item js-track-header-event" href="/categoria/componentes">Componentes</a></li>           <li><a class="head-list-item js-track-header-event" href="/categoria/ordenadores">Ordenadores</a></li>           <li><a class="head-list-item js-track-header-event" href="/categoria/videojuegos">Videojuegos</a></li>           <li><a class="head-list-item js-track-header-event" href="/categoria/analisis">Análisis</a></li>           <li><a class="head-list-item js-track-header-event" href="/categoria/medicina-y-salud">Medicina y Salud</a></li>           <li><a class="head-list-item js-track-header-event" href="/categoria/moviles">Móviles</a></li>                <li><a class="head-list-item js-track-header-event" href="/tag/apple">Apple</a></li>           <li><a class="head-list-item js-track-header-event" href="/tag/inteligencia-artificial">Inteligencia artificial</a></li>           <li><a class="head-list-item js-track-header-event" href="/tag/despeja-la-x">Despeja la X</a></li>           <li><a class="head-list-item js-track-header-event" href="/tag/telefono-android">Teléfono Android</a></li>           <li><a class="head-list-item js-track-header-event" href="/tag/samsung">Samsung</a></li>           <li><a class="head-list-item js-track-header-event" href="/tag/android">Android</a></li>         </ul>
+    <p class="head-more-item">
+     <a href="/archivos" class="btn js-track-header-event">Ver más temas</a>
+    </p>
+  </nav>
+  <aside class="head-menu-follow">
+   <span class="head-item-meta">Síguenos</span>
+    <ul>
+ <li>
+  <a href="http://twitter.com/xataka" class="icon-twitter link-twitter" rel="nofollow">Twitter</a>
+ </li>
+ <li>
+  <a href="https://www.facebook.com/Xataka" class="icon-facebook link-facebook" rel="nofollow">Facebook</a>
+ </li>
+ <li>
+  <a href="https://www.youtube.com/user/xatakatv?sub_confirmation=1" class="icon-youtube link-youtube" rel="nofollow">Youtube</a>
+ </li>
+ <li>
+  <a class="icon-instagram link-instagram" href="https://instagram.com/xataka" rel="nofollow">Instagram</a>
+ </li>
+ <li>
+  <a href="https://telegram.me/xataka" class="icon-telegram link-telegram" rel="nofollow">Telegram</a>
+ </li>
+ <li>
+  <a class="icon-rss link-rss" href="/index.xml" rel="nofollow">RSS</a>
+ </li>
+ <li>
+  <a href="https://flipboard.com/@xataka" class="icon-flipboard link-flipboard" rel="nofollow">Flipboard</a>
+ </li>
+ <li>
+  <a href="https://www.linkedin.com/company/11275845/" class="icon-linkedin link-linkedin" rel="nofollow">LinkedIn</a>
+ </li>
+ <li id="sections-newsletter">
+  <a href="#head-menu-newsletter" class="icon-email link-email js-toggle-subscribe">E-mail</a>
+ </li>
+</ul>
+  </aside>
+  <section id="head-menu-newsletter" class="head-menu-newsletter">
+   <a href="#head-menu-newsletter" class="close close-corner js-toggle-subscribe"></a>
+   <form class="newsletter-form head-newsletter-form js-subscription" method="post" data-url="https://mailer.weblogssl.com/subscribe_check/#email#/xataka/Xataka" data-id="#head-menu-newsletter">
+    <h3 class="newsletter-heading">Recibe un email al día con los artículos de Xataka: </h3>
+    <p><input class="newsletter-input js-email" type="email" placeholder="Tu correo electrónico">
+    <button class="btn-primary newsletter-button" type="submit">Suscribir</button></p>
+   </form>
+  </section>
+  <nav class="head-menu-extras">
+   <ul class="head-list">
+         <li><a class="head-list-item section-tv js-track-header-event" href="https://www.youtube.com/user/xatakatv?sub_confirmation=1">Xataka
+      <span>TV</span>
+    </a></li>
+        <li><a class="head-list-item section-lomejor js-track-header-event" href="/lomejor">Lo mejor</a></li>
+    <li><a class="head-list-item section-staff js-track-header-event" href="/quienes-somos">Equipo editorial</a></li>
+    <li><a class="head-list-item section-contact js-track-header-event" href="/contacto">Contacta con nosotros</a></li>
+    <li id="sections-login">
+     <span id="login"></span>
+    </li>
+   </ul>
+  </nav>
+     <aside class="head-menu-external">
+    <p class="nav-heading">Más sitios que te gustarán</p>
+    <ul>
+                       <li><a class="head-list-item js-track-header-event"  href="https://www.vidaextra.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Vidaextra</a></li>                       <li><a class="head-list-item js-track-header-event"  href="https://www.xatakandroid.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Android</a></li>                       <li><a class="head-list-item js-track-header-event"  href="https://www.xatakamovil.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Móvil</a></li>                       <li><a class="head-list-item js-track-header-event"  href="https://www.applesfera.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Applesfera</a></li>                       <li><a class="head-list-item js-track-header-event"  href="https://www.genbeta.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Genbeta</a></li>         </ul>
+   </aside>
+    <div class="head-menu-channels">
+   <h3>Explora en nuestros medios</h3>
+   <ul>
+         <li><a href="#head-channel-tecnologia" class="head-list-item head-channel-caption explore-weblogs-sl-toggle">
+        Tecnología
+        <span class="head-item-meta m-desc">Móviles, tablets, aplicaciones, videojuegos, fotografía, domótica...</span></a><ul id="head-channel-tecnologia" class="head-channel-list"><li><a class="head-list-item tec-xataka js-track-header-event" rel="nofollow"  href="//www.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka</a></li><li><a class="head-list-item tec-xatakamovil js-track-header-event"   href="//www.xatakamovil.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Móvil</a></li><li><a class="head-list-item tec-xatakafoto js-track-header-event"   href="//www.xatakafoto.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Foto</a></li><li><a class="head-list-item tec-xatakandroid js-track-header-event"   href="//www.xatakandroid.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Android</a></li><li><a class="head-list-item tec-xatakahome js-track-header-event"   href="//www.xatakahome.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Smart Home</a></li><li><a class="head-list-item tec-xatakawindows js-track-header-event"   href="//www.xatakawindows.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Windows</a></li><li><a class="head-list-item tec-xatakaciencia js-track-header-event"   href="//www.xatakaciencia.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Ciencia</a></li><li><a class="head-list-item tec-applesfera js-track-header-event"   href="//www.applesfera.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Applesfera</a></li><li><a class="head-list-item tec-genbeta js-track-header-event"   href="//www.genbeta.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Genbeta</a></li><li><a class="head-list-item tec-magnet js-track-header-event"   href="//magnet.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Magnet</a></li><li><a class="head-list-item tec-mundoxiaomi js-track-header-event"   href="//www.mundoxiaomi.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Mundo Xiaomi</a></li></ul></li>         <li><a href="#head-channel-videojuegos" class="head-list-item head-channel-caption explore-weblogs-sl-toggle">
+        Videojuegos
+        <span class="head-item-meta m-desc">Consolas, juegos, PC, PS4, Switch, Nintendo 3DS y Xbox...</span></a><ul id="head-channel-videojuegos" class="head-channel-list"><li><a class="head-list-item tech-3djuegos js-track-header-event"   href="//www.3djuegos.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">3DJuegos</a></li><li><a class="head-list-item tec-vidaextra js-track-header-event"   href="//www.vidaextra.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Vida Extra</a></li><li><a class="head-list-item tech-ign js-track-header-event" rel="nofollow"  href="//es.ign.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">IGN</a></li><li><span class="head-list-item tech-millenium js-track-header-event">Millenium</a></li><li><a class="head-list-item tec-3djuegospc js-track-header-event"   href="//www.3djuegospc.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">3DJuegos PC</a></li></ul></li>         <li><a href="#head-channel-entretenimiento" class="head-list-item head-channel-caption explore-weblogs-sl-toggle">
+        Entretenimiento
+        <span class="head-item-meta m-desc">Series, cine, estrenos en cartelera, premios, rodajes, nuevas películas, televisión...</span></a><ul id="head-channel-entretenimiento" class="head-channel-list"><li><a class="head-list-item oci-sensacine js-track-header-event"   href="https://www.sensacine.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">Sensacine</a></li><li><a class="head-list-item oci-espinof js-track-header-event"   href="//www.espinof.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Espinof</a></li></ul></li>         <li><a href="#head-channel-gastronomia" class="head-list-item head-channel-caption explore-weblogs-sl-toggle">
+        Gastronomía
+        <span class="head-item-meta m-desc">Recetas, recetas de cocina fácil, pinchos, tapas, postres...</span></a><ul id="head-channel-gastronomia" class="head-channel-list"><li><a class="head-list-item est-directoalpaladar js-track-header-event"   href="//www.directoalpaladar.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Directo al Paladar</a></li></ul></li>         <li><a href="#head-channel-Estilodevida" class="head-list-item head-channel-caption explore-weblogs-sl-toggle">
+        Estilo de vida
+        <span class="head-item-meta m-desc">Moda, belleza, estilo, salud, fitness, familia, gastronomía, decoración, famosos...</span></a><ul id="head-channel-Estilodevida" class="head-channel-list"><li><a class="head-list-item est-vitonica js-track-header-event" rel="nofollow"  href="//www.vitonica.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Vitónica</a></li><li><a class="head-list-item est-trendencias js-track-header-event"   href="//www.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Trendencias</a></li><li><a class="head-list-item est-trendenciashombre js-track-header-event"   href="//www.trendenciashombre.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Trendencias Hombre</a></li><li><a class="head-list-item est-decoesfera js-track-header-event" rel="nofollow"  href="//decoracion.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Decoesfera</a></li><li><a class="head-list-item tec-compradiccion js-track-header-event"   href="//www.compradiccion.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Compradiccion</a></li><li><a class="head-list-item est-poprosa js-track-header-event"   href="//www.poprosa.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Poprosa</a></li></ul></li>         <li><a href="#head-channel-latinoamerica" class="head-list-item head-channel-caption explore-weblogs-sl-toggle">
+        Latinoamérica
+        <span class="head-item-meta m-desc">Publicaciones de México...</span></a><ul id="head-channel-latinoamerica" class="head-channel-list"><li><a class="head-list-item tec-xataka js-track-header-event"   href="//www.xataka.com.mx?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka México</a></li><li><a class="head-list-item est-directoalpaladar js-track-header-event"   href="//www.directoalpaladar.com.mx?utm_source=xataka&utm_medium=network&utm_campaign=footer">Directo al Paladar México</a></li><li><a class="head-list-item oci-sensacine js-track-header-event"   href="https://www.sensacine.com.mx#utm_source=xataka&utm_medium=network&utm_campaign=footer">Sensacine México</a></li><li><a class="head-list-item tech-3djuegos js-track-header-event"   href="//www.3djuegos.com/mx/#utm_source=xataka&utm_medium=network&utm_campaign=footer">3DJuegos México</a></li></ul></li>       </ul>
+  </div>
+  <nav class="head-menu-links">
+   <ul class="head-list">
+         <li><a class="head-list-item js-track-header-event" href="https://weblogs.webedia.es/aviso-legal.html">Aviso legal</a></li>
+        <li><a class="head-list-item js-track-header-event" href="https://www.weblogssl.com/contenidos">Condiciones de uso</a></li>
+    <li><a class="head-list-item js-track-header-event" href="https://www.weblogssl.com/cookies">Condiciones de uso de cookies</a></li>
+    <li><a class="head-list-item js-track-header-event" href="mailto:publicidad@webedia-group.com">Publicidad</a></li>
+   </ul>
+  </nav>
+ </div>
+</section>
+<section id="headlines" class="head-menu-container head-menu-new m-menu-right">
+ <a href="#headlines" class="head-menu-toggler js-toggle"></a>
+ <div class="head-menu">
+  <a href="#headlines" class="close close-corner js-toggle">Inicio</a>
+    <p class="nav-heading">Reciente</p>
+  <ul id="recent-posts">
+    <li><a href="/medicina-y-salud/ultimos-20-anos-tres-coronavirus-han-provocado-crisis-sanitarias-a-nivel-global-eso-estamos-buscando-vacuna-universal-ellos" class="head-new-item">
+  En los últimos 20 años tres coronavirus han provocado crisis sanitarias a nivel global, por eso estamos buscando una vacuna universal contra ellos
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T14:41:25+00:00"></time></span></a></li> <li><a href="/tecnologialg/como-conseguir-frigorifico-eficiente" class="head-new-item">
+  Nueve razones para comprar un frigorífico ecoeficiente (y una de ellas es un año de cerveza gratis)
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T15:07:22+00:00"></time></span></a></li> <li><a href="/analisis/vivo-v21-5g-opiniones-toma-contacto" class="head-new-item">
+  Vivo V21 5G, primeras impresiones: un smartphone que quiere ser el rey de los selfies sin renunciar a lo demás
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T14:14:46+00:00"></time></span></a></li> <li><a href="/videojuegos/microsoft-prepara-juegos-nativos-para-nube-no-tienen-claro-como-seran-como-se-jugaran" class="head-new-item">
+  Microsoft prepara juegos "nativos para la nube", pero no tienen claro ni cómo serán ni cómo se jugarán
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T13:00:38+00:00"></time></span></a></li> <li><a href="/aplicaciones/beta-soporte-multidispositivo-whatsapp-nos-deja-decepcionados-no-podremos-tenerlo-movil-wabetainfo" class="head-new-item">
+  La beta del soporte multidispositivo de WhatsApp nos deja decepcionados: no podremos tenerlo en más de un móvil, según WABetaInfo
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T12:00:38+00:00"></time></span></a></li> <li><a href="/vehiculos/seat-para-maquinas-no-unica-escasez-chips-provoca-cierre-tres-dias-su-planta-martorell" class="head-new-item">
+  Seat para máquinas (y no es la única): la escasez de chips provoca el cierre de tres días de su planta de Martorell 
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T11:51:53+00:00"></time></span></a></li> <li><a href="/audio/oppo-enco-free2-llegan-a-espana-precio-disponibilidad-oficiales-nuevos-auriculares-tws-cancelacion-ruido" class="head-new-item">
+  Los OPPO Enco Free2 llegan a España: precio y disponibilidad oficiales de los nuevos auriculares TWS con cancelación de ruido
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T11:11:17+00:00"></time></span></a></li> <li><a href="/componentes/espana-lidera-creacion-primer-chip-europeo-codigo-abierto-asi-eprocessor-paso-adelante-para-competir-hardware" class="head-new-item">
+  España lidera la creación del primer chip europeo de código abierto: así es eProcessor, un paso adelante para competir en hardware
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T11:00:36+00:00"></time></span></a></li> <li><a href="/legislacion-y-derechos/union-europea-investigara-a-google-cuarta-vez-uso-datos-para-publicidad-cookies-les-enfrenta-a-otra-millonaria-multa" class="head-new-item">
+  La Unión Europea investigará a Google por cuarta vez: restringir datos a competidores y las cookies les enfrenta a otra millonaria multa
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T10:29:45+00:00"></time></span></a></li> <li><a href="/componentes/tarjetas-graficas-nos-dan-respiro-precios-comienzan-a-bajar-situacion-mineria-criptodivisas" class="head-new-item">
+  Las tarjetas gráficas nos dan un respiro: los precios comienzan a bajar por la situación de la minería de criptodivisas
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T10:00:32+00:00"></time></span></a></li> <li><a href="/pro/jornada-cuatro-dias-nuevo-campo-batalla-muchos-trabajadores-no-quieren-reduccion-sueldo-mayoria-empresas-ven-inviable-mantenerlos" class="head-new-item">
+  La jornada de cuatro días, nuevo campo de batalla: muchos trabajadores no quieren reducción de sueldo, la mayoría de las empresas ven inviable mantenerlos
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T09:05:36+00:00"></time></span></a></li> <li><a href="/medicina-y-salud/objetivo-era-alcanzar-15-millones-personas-completamente-vacunadas-semana-pasada-no-hemos-conseguido-retraso-inesperado-buena-noticia" class="head-new-item">
+  El objetivo era alcanzar los 15 millones de personas completamente vacunadas la semana pasada, no lo hemos conseguido: un retraso inesperado y una buena noticia
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T08:50:57+00:00"></time></span></a></li> <li><a href="/televisores/no-todos-conectores-hdmi-tu-televisor-iguales-como-sacarles-partido-que-hdmi-2-1-cambiara-reglas-juego" class="head-new-item m-republish" ><span class="head-new-video-desc">No todos los conectores HDMI de tu televisor son iguales: cómo sacarles partido y por qué HDMI 2.1 cambia las reglas del juego</span><span class="head-item-meta">
+             Por si te lo perdiste
+           </span></a></li> <li><a href="https://www.genbeta.com/podcasting/90-podcasts-mundo-muere-su-tercer-episodio-solo-1-supera-21?utm_source=xataka&utm_medium=network&utm_campaign=headlines_reciente" class="head-new-item m-crosspost">
+  El 90% de los podcasts del mundo muere tras su tercer episodio (y sólo el 1% supera los 21) 
+  <span class="head-item-meta">
+   en Genbeta <time class="js-header-post" datetime="2021-06-22T08:42:28+00:00"></time></span></a></li> <li><a href="/realmetechlife/estas-pensando-comprar-robot-aspirador-estos-trucos-empezaras-a-sacarle-partido-minuto-cero" class="head-new-item">
+  Si estás pensando comprar un robot aspirador, con estos trucos empezarás a sacarle partido desde el minuto cero 
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T08:15:02+00:00"></time></span></a></li> <li><a href="/aplicaciones/app-google-esta-fallando-a-nivel-mundial-cuales-posibles-causas-como-solucionarlo" class="head-new-item">
+  La app de Google está fallando a nivel mundial: cuáles son las posibles causas y cómo solucionarlo
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T07:38:18+00:00"></time></span></a></li> <li><a href="/cazando-gangas/amazon-prime-day-mejores-ofertas-dia-tecnologia-gadgets-5" class="head-new-item">
+  Amazon Prime day: Mejores ofertas del día en tecnología y gadgets
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T06:02:28+00:00"></time></span></a></li> <li><a href="/espacio/2031-tendremos-visita-astro-que-orbita-sol-cada-612-190-anos-pasara-cerca-saturno" class="head-new-item">
+  En 2031 tendremos visita: un astro que orbita el Sol cada 612.190 años pasará cerca de Saturno
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-22T06:00:29+00:00"></time></span></a></li> <li><a href="/ordenadores/quinto-superordenador-potente-mundo-tesla-utiliza-para-entrenar-a-su-ia-conduccion-autonoma" class="head-new-item">
+  El quinto superordenador más potente del mundo es de Tesla: lo utiliza para entrenar a su IA de conducción autónoma
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-21T22:01:34+00:00"></time></span></a></li> <li><a href="/espacio/telescopio-espacial-hubble-lleva-semana-inactivo-fallo-esta-ordenador-interno-1974" class="head-new-item">
+  El telescopio espacial Hubble lleva más de una semana inactivo: el fallo está en un ordenador interno de 1974
+  <span class="head-item-meta"><time class="js-header-post" datetime="2021-06-21T20:36:25+00:00"></time></span></a></li>  </ul>
+  <p class="head-more-item"><a href="#" class="btn" id="view-more" data-blog="xataka">Ver más artículos</a></p>
+     <div class="head-menu-video">
+    <p class="nav-heading"> Xataka
+     <span>TV</span>
+    </p>
+    <ul id="recent-videos">
+          <li><a href="https://www.xataka.com/basics/amazon-prime-day-2021-trucos-consejos-herramientas-para-saber-ofertas-ofertas" class="head-new-item"><span class="head-new-video-thumb"><img alt="PRIME&#x20;DAY&#x3A;&#x20;TRUCOS&#x20;Y&#x20;HERRAMIENTAS&#x20;para&#x20;SABER&#x20;SI&#x20;LAS&#x20;OFERTAS&#x20;SON&#x20;BUENAS" src="https://img.youtube.com/vi/5yfNIHJ8pbI/mqdefault.jpg"></span><span class="head-new-video-desc">PRIME DAY: TRUCOS Y HERRAMIENTAS para SABER SI LAS OFERTAS SON BUENAS</span></a></li>     <li><a href="https://www.xataka.com/analisis/xiaomi-mi-tv-p1-analisis-caracteristicas-precio-especificaciones" class="head-new-item"><span class="head-new-video-thumb"><img alt="Xiaomi&#x20;Mi&#x20;TV&#x20;P1,&#x20;an&#x00E1;lisis&#x3A;&#x20;ESTRUJANDO&#x20;las&#x20;POSIBILIDADES&#x20;de&#x20;la&#x20;GAMA&#x20;MEDIA" src="https://img.youtube.com/vi/wCtC7Hom5Hg/mqdefault.jpg"></span><span class="head-new-video-desc">Xiaomi Mi TV P1, análisis: ESTRUJANDO las POSIBILIDADES de la GAMA MEDIA</span></a></li>     <li><a href="https://www.xataka.com/analisis/realme-gt-analisis-caracteristicas-precio-especificaciones" class="head-new-item"><span class="head-new-video-thumb"><img alt="Realme&#x20;GT,&#x20;an&#x00E1;lisis&#x3A;&#x20;un&#x20;DERROCHE&#x20;de&#x20;POTENCIA&#x20;por&#x20;MENOS&#x20;de&#x20;500&#x20AC;&#x20;pero&#x20;con&#x20;SACRIFICIOS" src="https://img.youtube.com/vi/tigEdPCFcyI/mqdefault.jpg"></span><span class="head-new-video-desc">Realme GT, análisis: un DERROCHE de POTENCIA por MENOS de 500€ pero con SACRIFICIOS</span></a></li>    </ul>
+    <p class="head-more-item"><a href="#" class="btn" id="view-more-videos" data-blog="xataka">Ver más vídeos</a></p>
+   </div>
+   </div>
+</section>
+<nav id="search" class="head-menu-container head-menu-searchapp">
+</nav>
+<script>
+ document.getElementById("search").innerHTML = '\
+ <a href="#search" class="head-menu-toggler js-toggle"></a>\
+ <div class="head-menu">\
+  <a href="#search" class="close close-corner js-toggle">Inicio</a>\
+  <h2>Buscar</h2>\
+  <div class="head-menu-search">\
+   <div class="head-search-form js-search-form">\
+    <input id="search-field-2" type="text" placeholder="Buscar en Xataka" class="search-container-2" data-container="#search-container-2">\
+    <button class="head-search-button js-search-button" data-field="#search-field-2">Buscar</button>\
+   </div>\
+  </div>\
+  <section id="search-container-2" class="js-search-results"></section>\
+ </div>';
+</script>
+<nav class="nav nav-list nav-register" id="nav-twitter-register"></nav>
+<div id="react-login"></div>
+<nav class="nav nav-list nav-login" id="nav-login"></nav>
+<nav class="nav nav-list nav-register" id="nav-register"></nav>
+<nav class="nav nav-list nav-login" id="nav-recover"></nav>
+<nav class="nav nav-list nav-login" id="nav-pick"></nav>
+<div id="js-edit-user-profile-form"></div>
+<div id="js-user-comments"></div>
+<div id="js-modal-user-deactivate"></div>
+
+      <script>
+  window.WSLModules = window.WSLModules || {};
+  WSLModules.Footer = {'moduleConf' : 'c1'};
+</script>
+ <footer class="foot js-foot">
+ <div class="wrapper foot-wrapper">
+  <div id="newsletter" class="newsletter-box">
+   <div class="menu-follow foot-menu-follow">
+    <span class="item-meta foot-item-meta">Síguenos</span>
+    <ul>
+ <li>
+  <a href="http://twitter.com/xataka" class="icon-twitter link-twitter" rel="nofollow">Twitter</a>
+ </li>
+ <li>
+  <a href="https://www.facebook.com/Xataka" class="icon-facebook link-facebook" rel="nofollow">Facebook</a>
+ </li>
+ <li>
+  <a href="https://www.youtube.com/user/xatakatv?sub_confirmation=1" class="icon-youtube link-youtube" rel="nofollow">Youtube</a>
+ </li>
+ <li>
+  <a class="icon-instagram link-instagram" href="https://instagram.com/xataka" rel="nofollow">Instagram</a>
+ </li>
+ <li>
+  <a href="https://telegram.me/xataka" class="icon-telegram link-telegram" rel="nofollow">Telegram</a>
+ </li>
+ <li>
+  <a class="icon-rss link-rss" href="/index.xml" rel="nofollow">RSS</a>
+ </li>
+ <li>
+  <a href="https://flipboard.com/@xataka" class="icon-flipboard link-flipboard" rel="nofollow">Flipboard</a>
+ </li>
+ <li>
+  <a href="https://www.linkedin.com/company/11275845/" class="icon-linkedin link-linkedin" rel="nofollow">LinkedIn</a>
+ </li>
+</ul>
+   </div>
+  </div>
+  <nav class="menu-categories foot-menu-categories">
+   <p class="nav-heading">En Xataka hablamos de...</p>
+   <ul>
+   <li><a class="list-item foot-list-item" href="/categoria/componentes">Componentes</a></li>   <li><a class="list-item foot-list-item" href="/categoria/ordenadores">Ordenadores</a></li>   <li><a class="list-item foot-list-item" href="/categoria/videojuegos">Videojuegos</a></li>   <li><a class="list-item foot-list-item" href="/categoria/analisis">Análisis</a></li>   <li><a class="list-item foot-list-item" href="/categoria/medicina-y-salud">Medicina y Salud</a></li>   <li><a class="list-item foot-list-item" href="/categoria/moviles">Móviles</a></li>    <li><a class="list-item foot-list-item" href="/tag/apple">Apple</a></li>   <li><a class="list-item foot-list-item" href="/tag/inteligencia-artificial">Inteligencia artificial</a></li>   <li><a class="list-item foot-list-item" href="/tag/despeja-la-x">Despeja la X</a></li>   <li><a class="list-item foot-list-item" href="/tag/telefono-android">Teléfono Android</a></li>   <li><a class="list-item foot-list-item" href="/tag/samsung">Samsung</a></li>   <li><a class="list-item foot-list-item" href="/tag/android">Android</a></li> </ul>   <p class="view-even-more"><a href="/archivos" class="btn">Ver más temas</a></p>
+  </nav>
+  <script>
+ document.write('\
+  <div class="search-box foot-search">\
+   <div class="search-form js-search-form">\
+    <input id="search-field-3" type="text" placeholder="Buscar en Xataka" class="search-container-3" data-container="#search-container-3">\
+    <button class="search-button js-search-button" data-field="#search-field-3">Buscar</button>\
+   </div>\
+  </div>')
+</script>  <div id="search-container-3" class="js-search-results"></div>
+ </div>
+</footer>
+ <script>
+  (function() {
+   var form = document.createElement('form');
+   form.method = 'POST';
+   form.classList.add('js-subscription', 'newsletter-form', 'foot-newsletter-form');
+   form.setAttribute('data-url', "https://mailer.weblogssl.com/subscribe_check/#email#/xataka/Xataka");
+   form.innerHTML = '<p class="nav-heading">Recibe un email al día con los artículos de Xataka: </p>\
+    <p><input class="js-email newsletter-input" type="email" placeholder="Tu correo electrónico">\
+    <button class="btn-primary newsletter-button" type="submit">Suscribir</button></p>';
+   var newsletterContainer = document.getElementById('newsletter');
+   newsletterContainer.insertBefore(form, newsletterContainer.firstChild);
+  })();
+ </script>
+<section class="foot-external js-foot-external">
+ <div class="wrapper foot-wrapper">
+  <header class="foot-head">
+   <a class="backlink foot-backlink" href="#">Subir</a>
+    <p class="webedia-brand foot-webedia-brand">
+  <a href="https://www.webedia.es/" class="webedia-logo foot-webedia-logo"><span>Webedia</span></a>
+ </p>
+  </header>
+    <div class="menu-external foot-menu-external">
+   <div class="spain-blogs">
+          <div class="links-category">
+    <p class="channel-title"> Tecnología </p><ul><li><a class="list-item foot-list-item"  rel="nofollow"  href="//www.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka</a></li><li><a class="list-item foot-list-item"  href="//www.xatakamovil.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Móvil</a></li><li><a class="list-item foot-list-item"  href="//www.xatakafoto.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Foto</a></li><li><a class="list-item foot-list-item"  href="//www.xatakandroid.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Android</a></li><li><a class="list-item foot-list-item"  href="//www.xatakahome.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Smart Home</a></li><li><a class="list-item foot-list-item"  href="//www.xatakawindows.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Windows</a></li><li><a class="list-item foot-list-item"  href="//www.xatakaciencia.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka Ciencia</a></li><li><a class="list-item foot-list-item"  href="//www.applesfera.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Applesfera</a></li><li><a class="list-item foot-list-item"  href="//www.genbeta.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Genbeta</a></li><li><a class="list-item foot-list-item"  href="//magnet.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Magnet</a></li><li><a class="list-item foot-list-item"  href="//www.mundoxiaomi.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Mundo Xiaomi</a></li></ul>
+  </div>
+   <div class="links-category">
+    <p class="channel-title"> Videojuegos </p><ul><li><a class="list-item foot-list-item"  href="//www.3djuegos.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">3DJuegos</a></li><li><a class="list-item foot-list-item"  href="//www.vidaextra.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Vida Extra</a></li><li><a class="list-item foot-list-item"  rel="nofollow"  href="//es.ign.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">IGN</a></li><li><span class="list-item foot-list-item">Millenium</span></li><li><a class="list-item foot-list-item"  href="//www.3djuegospc.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">3DJuegos PC</a></li></ul>
+  </div>
+   <div class="links-category">
+    <p class="channel-title"> Entretenimiento </p><ul><li><a class="list-item foot-list-item"  href="https://www.sensacine.com#utm_source=xataka&utm_medium=network&utm_campaign=footer">Sensacine</a></li><li><a class="list-item foot-list-item"  href="//www.espinof.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Espinof</a></li></ul>
+  </div>
+   <div class="links-category">
+    <p class="channel-title"> Gastronomía </p><ul><li><a class="list-item foot-list-item"  href="//www.directoalpaladar.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Directo al Paladar</a></li></ul>
+  </div>
+   <div class="links-category">
+    <p class="channel-title"> Estilo de vida </p><ul><li><a class="list-item foot-list-item"  rel="nofollow"  href="//www.vitonica.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Vitónica</a></li><li><a class="list-item foot-list-item"  href="//www.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Trendencias</a></li><li><a class="list-item foot-list-item"  href="//www.trendenciashombre.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Trendencias Hombre</a></li><li><a class="list-item foot-list-item"  rel="nofollow"  href="//decoracion.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Decoesfera</a></li><li><a class="list-item foot-list-item"  href="//www.compradiccion.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Compradiccion</a></li><li><a class="list-item foot-list-item"  href="//www.poprosa.com?utm_source=xataka&utm_medium=network&utm_campaign=footer">Poprosa</a></li></ul>
+  </div>
+ 
+   </div>
+       <div class="latam-blogs">
+     <p class="channel-title">Latinoamérica</p>
+           <div class="links-category">
+    <ul><li><a class="list-item foot-list-item"  href="//www.xataka.com.mx?utm_source=xataka&utm_medium=network&utm_campaign=footer">Xataka México</a></li></ul>
+  </div>
+   <div class="links-category">
+    <ul><li><a class="list-item foot-list-item"  href="//www.3djuegos.com/mx/#utm_source=xataka&utm_medium=network&utm_campaign=footer">3DJuegos México</a></li></ul>
+  </div>
+   <div class="links-category">
+    <ul><li><a class="list-item foot-list-item"  href="https://www.sensacine.com.mx#utm_source=xataka&utm_medium=network&utm_campaign=footer">Sensacine México</a></li></ul>
+  </div>
+   <div class="links-category">
+    <ul><li><a class="list-item foot-list-item"  href="//www.directoalpaladar.com.mx?utm_source=xataka&utm_medium=network&utm_campaign=footer">Directo al Paladar México</a></li></ul>
+  </div>
+ 
+    </div>
+     </div>
+ </div>
+</section>
+ <aside id="head-favicons" class="head-favicons-container m-is-later js-head-favicons ">
+ <div class="head-favicons">
+     <div class="head-favicons-index head-webedia-logo">
+    <a class="js-group-toggle" href="#" data-target="#head-network"><abbr title="Webedia">Webedia</abbr></a>
+   </div>
+    <ul class="head-favicons-list">
+                                 <li>
+      <a class="favicon tec-xataka
+              favicon-current
+       " rel="nofollow" href="//www.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-vidaextra
+       "  href="//www.vidaextra.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Vida Extra</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon oci-espinof
+       "  href="//www.espinof.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Espinof</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-genbeta
+       "  href="//www.genbeta.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Genbeta</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon est-directoalpaladar
+       "  href="//www.directoalpaladar.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Directo al Paladar</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-xatakaciencia
+       "  href="//www.xatakaciencia.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka Ciencia</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon est-trendencias
+       "  href="//www.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Trendencias</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-applesfera
+       "  href="//www.applesfera.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Applesfera</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-xatakamovil
+       "  href="//www.xatakamovil.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka Móvil</span>
+      </a>
+     </li>
+                                     <li>
+      <a class="favicon est-decoesfera
+       " rel="nofollow" href="//decoracion.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Decoesfera</span>
+      </a>
+     </li>
+                                     <li>
+      <a class="favicon est-vitonica
+       " rel="nofollow" href="//www.vitonica.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Vitónica</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-xatakafoto
+       "  href="//www.xatakafoto.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka Foto</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon est-trendenciashombre
+       "  href="//www.trendenciashombre.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Trendencias Hombre</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-xatakandroid
+       "  href="//www.xatakandroid.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka Android</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-xatakahome
+       "  href="//www.xatakahome.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka Smart Home</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-xatakawindows
+       "  href="//www.xatakawindows.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Xataka Windows</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-magnet
+       "  href="//magnet.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Magnet</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-compradiccion
+       "  href="//www.compradiccion.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Compradiccion</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tech-3djuegos
+       "  href="//www.3djuegos.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>3DJuegos</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon oci-sensacine
+       "  href="https://www.sensacine.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Sensacine</span>
+      </a>
+     </li>
+                                     <li>
+      <a class="favicon tech-ign
+       " rel="nofollow" href="//es.ign.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>IGN</span>
+      </a>
+     </li>
+                          <li>
+      <span class="favicon tech-millenium ">
+       <span>Millenium</span>
+      </span>
+     </li>
+                          <li>
+      <a class="favicon est-poprosa
+       "  href="//www.poprosa.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Poprosa</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-mundoxiaomi
+       "  href="//www.mundoxiaomi.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>Mundo Xiaomi</span>
+      </a>
+     </li>
+                          <li>
+      <a class="favicon tec-3djuegospc
+       "  href="//www.3djuegospc.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons">
+       <span>3DJuegos PC</span>
+      </a>
+     </li>
+         </ul>
+ </div>
+</aside>
+<aside class="favicons-expanded-container js-favicons-expand" id="head-network">
+ <div class="favicons-expanded">
+           <div class="favicons-expanded-inner">
+    <ul><li><h4>Tecnología</h4></li><li><a class="favicon tec-xataka"  rel="nofollow"  href="//www.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka
+     </a></li><li><a class="favicon tec-xatakamovil"  href="//www.xatakamovil.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka Móvil
+     </a></li><li><a class="favicon tec-xatakafoto"  href="//www.xatakafoto.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka Foto
+     </a></li><li><a class="favicon tec-xatakandroid"  href="//www.xatakandroid.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka Android
+     </a></li><li><a class="favicon tec-xatakahome"  href="//www.xatakahome.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka Smart Home
+     </a></li><li><a class="favicon tec-xatakawindows"  href="//www.xatakawindows.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka Windows
+     </a></li><li><a class="favicon tec-xatakaciencia"  href="//www.xatakaciencia.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Xataka Ciencia
+     </a></li><li><a class="favicon tec-applesfera"  href="//www.applesfera.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Applesfera
+     </a></li><li><a class="favicon tec-genbeta"  href="//www.genbeta.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Genbeta
+     </a></li><li><a class="favicon tec-magnet"  href="//magnet.xataka.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Magnet
+     </a></li><li><a class="favicon tec-mundoxiaomi"  href="//www.mundoxiaomi.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Mundo Xiaomi
+     </a></li></ul>
+  </div>
+   <div class="favicons-expanded-inner">
+    <ul><li><h4>Videojuegos</h4></li><li><a class="favicon tech-3djuegos"  href="//www.3djuegos.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>3DJuegos
+     </a></li><li><a class="favicon tec-vidaextra"  href="//www.vidaextra.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Vida Extra
+     </a></li><li><a class="favicon tech-ign"  rel="nofollow"  href="//es.ign.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>IGN
+     </a></li><li><span class="favicon tech-millenium"><span></span>Millenium</span></li><li><a class="favicon tec-3djuegospc"  href="//www.3djuegospc.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>3DJuegos PC
+     </a></li></ul>
+  </div>
+   <div class="favicons-expanded-inner">
+    <ul><li><h4>Entretenimiento</h4></li><li><a class="favicon oci-sensacine"  href="https://www.sensacine.com#utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Sensacine
+     </a></li><li><a class="favicon oci-espinof"  href="//www.espinof.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Espinof
+     </a></li></ul>
+  </div>
+   <div class="favicons-expanded-inner">
+    <ul><li><h4>Gastronomía</h4></li><li><a class="favicon est-directoalpaladar"  href="//www.directoalpaladar.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Directo al Paladar
+     </a></li></ul>
+  </div>
+   <div class="favicons-expanded-inner">
+    <ul><li><h4>Estilo de vida</h4></li><li><a class="favicon est-vitonica"  rel="nofollow"  href="//www.vitonica.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Vitónica
+     </a></li><li><a class="favicon est-trendencias"  href="//www.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Trendencias
+     </a></li><li><a class="favicon est-trendenciashombre"  href="//www.trendenciashombre.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Trendencias Hombre
+     </a></li><li><a class="favicon est-decoesfera"  rel="nofollow"  href="//decoracion.trendencias.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Decoesfera
+     </a></li><li><a class="favicon tec-compradiccion"  href="//www.compradiccion.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Compradiccion
+     </a></li><li><a class="favicon est-poprosa"  href="//www.poprosa.com?utm_source=xataka&utm_medium=network&utm_campaign=favicons"><span></span>Poprosa
+     </a></li></ul>
+  </div>
+ 
+ </div>
+ </aside>
+
+
+ <div id="fb-root"></div>
+      <div id="cookies-overlay" class="cookies-overlay"></div>
+     </div>
+    </div>
+   </div>
+  </div>
+   <div id="div-gpt-int" style="width:1px; height:1px;">
+  <script>
+   googletag.cmd.push(function() { googletag.display("div-gpt-int"); });
+  </script>
+ </div>
+   <div id="div-gpt-int2" style="width:1px; height:1px;">
+  <script>
+   googletag.cmd.push(function() { googletag.display("div-gpt-int2"); });
+  </script>
+ </div>
+   <script>
+(function() {
+ var lazyElements    = document.getElementsByClassName('sf-lazy')
+ ,   srcsetSupported = false
+ ,   threshold;
+
+ if (!/Edge\/\d+/.test(navigator.userAgent)) {
+  srcsetSupported = 'srcset' in document.createElement('img');
+ }
+
+ function updateAttributes(element) {
+  var sfSrcset = element.getAttribute('data-sf-srcset') || element.getAttribute('sf-srcset');
+  var sfSrc = element.getAttribute('data-sf-src') || element.getAttribute('sf-src');
+  var sizes = element.getAttribute('data-sizes');
+  if (sfSrcset) {
+   element.setAttribute('srcset', sfSrcset);
+  }
+  if (sfSrc) {
+   element.setAttribute('src', sfSrc);
+  }
+  if (sizes) {
+   element.setAttribute('sizes', sizes);
+  }
+  element.classList.remove('sf-lazy');
+ }
+
+ threshold = (window.innerHeight || document.documentElement.clientHeight) + 100;
+ function lazyLoad() {
+  var coords, element, i, isVisible;
+  if (0 == lazyElements.length) {
+   document.removeEventListener('scroll', lazyLoad);
+   return false;
+  }
+
+  for (i = 0; i < lazyElements.length; i++) {
+   element = lazyElements[i];
+   coords = element.getBoundingClientRect();
+   isVisible = (coords.top >= 0 && coords.left >= 0 && coords.top) <= threshold;
+   if (isVisible) {
+    updateAttributes(element);
+   }
+  }
+ }
+
+ if (srcsetSupported) {
+  document.addEventListener('scroll', lazyLoad);
+  lazyLoad();
+ }
+})();
+</script>  <script>
+ var WSL2 = WSL2 || {};
+ WSL2.config = WSL2.config || {};
+ WSL2.config.fbapikey = "355823546895";
+ WSL2.config.fbApiVersion = "v8.0";
+ WSL2.config.siteName = "Xataka";
+ WSL2.config.jsPath = "https://img.weblogssl.com/LPbackend/prod/v2/js";
+ WSL2.config.gtmContainerId = "";
+ WSL2.config.imagePath = "https://img.weblogssl.com/css/xataka/p/v6";
+ WSL2.config.desktopSiteUrl = "https://www.xataka.com";
+ WSL2.config.cookieDomain = "";
+ WSL2.config.enableEditorialRecommendations = "1";
+ WSL2.config.s3ImagePath = "https://i.blogs.es";
+ WSL2.config.eventImagePath = "http://img.xataka.com/events";
+ WSL2.config.socialTwitter = "xataka";
+ WSL2.config.enableUniformSocialShareGallery = "1";
+ WSL2.config.twitterSocial = "xataka";
+ WSL2.config.enableCen2AdInComments = 0;
+ WSL2.config.enableGiphyInComments = 0;
+ WSL2.config.enableJwplayerVideoAd = 1;
+ WSL2.config.enablePinterestSharing = 0;
+ WSL2.config.enableAdblockEcommerce = 1;
+ WSL2.config.adminUrl = "https://admin.xataka.com";
+ WSL2.config.blogDomain = "xataka.com";
+ WSL2.config.blogMeta = {
+  siteName: "xataka",
+  mnemonic: "XTK",
+  blogDomain: "xataka.com"
+ };
+ WSL2.config.jwplayerKey = "1vZlXWdZxKOPZcXAx5/X7QR362yqcd+OT7+37g==";
+ WSL2.config.jwplayerVastId = "241667871";
+ WSL2.config.showMxSiteFloatingBox = 1;
+ WSL2.config.enableGoogleAnalytics = 1;
+ WSL2.config.jwplayerVersion = "8.18.4";
+ WSL2.config.enableWebVitals = 1;
+ WSL2.config.enableAdblockMonetization = 1;
+ WSL2.config.insuradsLink = "";
+</script>
+<script>
+ WSL2.config.postSubType = "normal";
+ WSL2.config.redirectDesktopRoot = 'false';
+ WSL2.config.postId = 234578;
+ WSL2.config.postTitle = "Bitcoin\u0020se\u0020actualizar\u00E1\u0020cuatro\u0020a\u00F1os\u0020despu\u00E9s\u003A\u0020c\u00F3mo\u0020funciona\u0020Taproot\u0020y\u0020qu\u00E9\u0020cambios\u0020se\u0020esperan\u0020a\u0020partir\u0020de\u0020noviembre";
+ WSL2.config.tweetText = "Comentario%20a%20Bitcoin%20se%20actualizar%C3%A1%20cuatro%20a%C3%B1os%20despu%C3%A9s%3A%20c%C3%B3mo%20funciona%20Taproot%20y%20qu%C3%A9%20cambios%20se%20esperan%20a%20partir%20de%20noviembre";
+ WSL2.config.twitterName = "";
+ WSL2.config.postUrl = "https://www.xataka.com/criptomonedas/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre";
+ WSL2.config.recommendationEngineVersion = 1;
+ WSL2.config.device = "desktop";
+ WSL2.config.enableNanomediaHeader = 1;
+ WSL2.config.enableStickySidebar = 1;
+ </script>
+<script type="text/x-template" id="js-adblock-products">
+ [{"url":"https:\/\/www.amazon.es\/gp\/offer-listing\/B07HNMN7TM\/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07HNMN7TM&linkCode=am2&tag=xataka-banner-adblock-21&linkId=c15e517dfbcb4a08faa05675bda2b286","title":"Cecotec Conga Serie 3090","asin":"B07HNMN7TM","image":"https:\/\/img.weblogssl.com\/g\/images\/cecotec_conga_serie_3090.jpg","price":"279,00","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/gp\/offer-listing\/B01ETRGE7M\/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01ETRGE7M&linkCode=am2&tag=xataka-banner-adblock-21&linkId=646320bec1696956a1736eea987b18cd","title":"Fire TV Stick","asin":"B01ETRGE7M","image":"https:\/\/img.weblogssl.com\/g\/images\/fire_tv_stick%20.png","price":"39,99","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/gp\/product\/B077QHRLPB\/ref=as_li_tl?ie=UTF8&tag=xataka-banner-adblock-21&camp=3638&creative=24630&linkCode=as2&creativeASIN=B077QHRLPB&linkId=a05ce0d1e76a7fca419a3cbce5747c30","title":"Xiaomi Mi Scooter M365","asin":"B077QHRLPB","image":"https:\/\/img.weblogssl.com\/g\/images\/xiaomi_mi_scooter_m365.png","price":"361,55","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/gp\/offer-listing\/B07NRK942P\/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07NRK942P&linkCode=am2&tag=xataka-banner-adblock-21&linkId=618d66850401498557c7309cbea08404","title":"Xiaomi Mi 9","asin":"B07NRK942P","image":"https:\/\/img.weblogssl.com\/g\/images\/xaomi9.jpg","price":"388,00","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/gp\/product\/B07GDR2PH9\/?tag=xataka-banner-adblock-21","title":"Auriculares bluetooth cancelaci\u00f3n de ruido","asin":"B07GDR2PH9","image":"https:\/\/img.weblogssl.com\/g\/images\/Sony_WH-1000XM3S.jpg","price":"324,98","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/gp\/product\/B016H0R7SE\/?tag=xataka-banner-adblock-21","title":"Philips Hue White","asin":"B016H0R7SE","image":"https:\/\/img.weblogssl.com\/g\/images\/Philips_Hue_White.jpg","price":"67,01","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/SanDisk-Ultra-Android-microSDXC-adaptador\/dp\/B0758NHWS8\/?tag=xataka-banner-adblock-21","title":"Tarjeta de memoria microSDXC de 256 GB","asin":"B0758NHWS8","image":"https:\/\/img.weblogssl.com\/g\/images\/Tarjeta_de_memoria_microSDXC.jpg","price":"39,99","currency":"EUR"},{"url":"https:\/\/www.amazon.es\/Xiaomi-Redmi-Note-Ranura-h%C3%ADbrida\/dp\/B07PB8TYCJ\/?tag=xataka-banner-adblock-21","title":"Xiaomi Redmi Note 7 16 cm (6.3\") 4 GB 64 GB","asin":"B07PB8TYCJ","image":"https:\/\/img.weblogssl.com\/g\/images\/Xiaomi_Redmi_Note_ES.jpg","price":"170,00","currency":"EUR"}]
+</script>
+<script>
+ function injectScript(src) {
+  var script = document.createElement('script');
+  script.src = src;
+  script.async = true;
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
+ }
+
+ if (document.querySelectorAll('div.js-jw-player').length) {
+  injectScript('https://img.weblogssl.com/LPbackend/prod/v2/js/jwplayer-6e479c88.js');
+ }
+
+ if (document.querySelectorAll('div.js-dailymotion').length) {
+  injectScript('https://img.weblogssl.com/LPbackend/prod/v2/js/dailymotion-6e479c88.js');
+ }
+</script>
+ <script async src="https://img.weblogssl.com/LPbackend/prod/v2/js/postpage-6e479c88.js"></script>
+       <script>
+  window.WSLModules = window.WSLModules || {};
+  WSLModules.Recommendations = WSLModules.Recommendations || {};
+  WSLModules.Recommendations.PostRecommendation = {
+   endpoint: "https://recommendations.weblogssl.com/xataka/bitcoin-se-actualizara-cuatro-anos-despues-como-funciona-taproot-que-cambios-se-esperan-a-partir-noviembre/AT"
+  }
+ </script>
+     <script>
+  window.WSLModules = window.WSLModules || {};
+  WSLModules.Recommendations = WSLModules.Recommendations || {};
+  WSLModules.Recommendations.Editorial = {
+   endpoint: "https://recommendations.weblogssl.com/editorial/xataka",
+   version: "v1"
+  }
+ </script>
+  <script>
+  (function(d) {
+   if ('ES' !== country) {
+    return;
+   }
+
+   var b = d.body;
+   var e = d.createElement('script');
+   e.id = 'parsely-cfg';
+   e.src = '//cdn.parsely.com/keys/xataka.com/p.js';
+   e.async = true;
+   e.setAttribute('data-parsely-site', "xataka.com");
+   b.appendChild(e);
+  })(document);
+ </script>
+ <script type="didomi/javascript" data-vendor="iab:184" >
+  !function(t,e,a){"use strict";var i=t.scimhtiraidem||{};function s(t){var e=i[a]||{};i[a]=e,e[t]||(e[t]=function(){i._queue[a].push({method:t,args:Array.prototype.slice.apply(arguments)})})}t.googletag=t.googletag||{},t.googletag.cmd=t.googletag.cmd||[],t.googletag.cmd.push(function(){var e=t.localStorage.getItem("mics_sgmts"),a=JSON.parse(e),i=a||{};Object.keys(i).forEach(function(e){t.googletag.pubads().setTargeting("mics_"+e,i[e].map(String))})});var r="init call config push pushDefault addProperties addProperty onFinish onStart _reset".split(" ");i._queue=i._queue||{},i._names=i._names||[],i._names.push(a),i._queue[a]=i._queue[a]||[],i._startTime=(new Date).getTime(),i._snippetVersion="2.0";for(var o=0;o<r.length;o++)s(r[o]);t.scimhtiraidem=i,t[a]=i[a];var n=e.createElement("script");n.setAttribute("type","text/javascript"),n.setAttribute("src","https://static.mediarithmics.com/tag/2/tag.min.js"),n.setAttribute("async","true"),e.getElementsByTagName("script")[0].parentNode.appendChild(n)}(window,document,"webediaMics");
+
+  webediaMics.init("xataka-sp-2020");
+  webediaMics.call("syncFeeds");
+
+  var gen_data = {
+
+   //UTILS
+
+   global_container : function (str) {
+    var j = 0;
+    if (Object.keys(dataLayer).length > 0) {
+     dataLayer.forEach(function(item, index) {
+      if (item[str]) j = index;
+     });
+    }
+    return (dataLayer[j][str]) ? dataLayer[j][str] : null;
+   },
+
+   dateISO: function (date) {
+    var dateiso;
+    Date.parse(date) ? dateiso = new Date(date).toISOString() : dateiso = "";
+    return dateiso;
+   },
+
+   //EXTRACTION FUNCTIONS
+   extract_post: function() {
+    var post = {}
+    if (this.global_container("postId")) post["postId"] = this.global_container("postId");
+    if (this.global_container("publishedDate")) post["publishedDate"] = this.global_container("publishedDate");
+    if (this.global_container("site")) post["site"] = this.global_container("site");
+    this.global_container("partner") ?  post["partner"] = this.global_container("videoContent") : post["partner"] = false;
+    if (this.global_container("blockLength")) post["blockLength"] = this.global_container("blockLength");
+    if (this.global_container("mapping")) post["mapping"] = this.global_container("mapping");
+    if (this.global_container("elementsInPage") && this.global_container("elementsInPage").length > 0) post["elementsInPage"] = this.global_container("elementsInPage");
+    if (this.global_container("modifiedDate")) post["modifiedDate"] = this.dateISO(this.global_container("modifiedDate"));
+    if (this.global_container("categories") && this.global_container("categories").length > 0) post["categories"] = this.global_container("categories");
+    if (this.global_container("tags") && this.global_container("tags").length > 0) post["tags"] = this.global_container("tags");
+    if (this.global_container("postType")) post["postType"] = this.global_container("postType");
+    return post;
+   },
+
+   extract_category:function() {
+    var catPage = {}
+    if (this.global_container("site")) catPage["site"] = this.global_container("site");
+    if (this.global_container("mapping")) catPage["mapping"] = this.global_container("mapping");
+    if (this.global_container("categories") && this.global_container("categories").length > 0) catPage["categories"] = this.global_container("categories");
+    return catPage
+   },
+
+   extract_data : function () {
+    var data = {}
+    data['pageTitle'] = document.title;
+    data['urlPath'] = window.location.pathname;
+    if (this.global_container("siteSection")) data["name"] = this.global_container("siteSection");
+    if (this.global_container("vertical")) data["vertical"] = this.global_container("vertical");
+    data["channel_id"] = this.global_container("site") + "_ES";
+    this.global_container("videoContent") ? data["has_video"] = this.global_container("videoContent") : data["has_video"] = false;
+    if (data["name"] === "postPage" || data["name"] == "postpage"){
+     data['weblogs'] = this.extract_post();
+    }
+    else if (data["name"] == "categorypage"){
+     data['weblogs'] = this.extract_category();
+    }
+
+    if (this.global_container("brandClub")) data['brandClub'] = this.global_container("brandClub")
+
+    return data;
+   }
+  };
+
+  var extracted_data = gen_data.extract_data();
+  var event_type = (gen_data.global_container("site_route")) ? gen_data.global_container("site_route") : 'error_event_datalayer_empty';
+  if (gen_data.global_container("user_id")) {
+   webediaMics.addProperty("$user_account_id", gen_data.global_container("user_id"));
+   webediaMics.addProperty("$compartment_id", "1539");
+  }
+  webediaMics.push(event_type, extracted_data);
+ </script>
+  </body>
+</html>
