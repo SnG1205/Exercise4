@@ -3,6 +3,9 @@ package at.ac.fhcampuswien.newsanalyzer.ui;
 
 import at.ac.fhcampuswien.newsanalyzer.ctrl.Controller;
 import at.ac.fhcampuswien.newsanalyzer.ctrl.NewsAPIException;
+import at.ac.fhcampuswien.newsanalyzer.downloader.Downloader;
+import at.ac.fhcampuswien.newsanalyzer.downloader.ParallelDownloader;
+import at.ac.fhcampuswien.newsanalyzer.downloader.SequentialDownloader;
 import at.ac.fhcampuswien.newsapi.NewsApi;
 import at.ac.fhcampuswien.newsapi.NewsApiBuilder;
 import at.ac.fhcampuswien.newsapi.enums.Country;
@@ -11,6 +14,8 @@ import at.ac.fhcampuswien.newsapi.enums.Endpoint;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
+import java.util.Scanner;
 
 public class UserInterface {
 
@@ -48,6 +53,44 @@ public class UserInterface {
 		menu.insert("y", "Get article count", this::getArticleCount);	// Exercise 3
 		menu.insert("z", "Sort by longest title", this::getSortArticlesByLongestTitle); // Exercise 3
 		menu.insert("g", "Download URLs", () -> {
+			 //Downloader downloader=new ParallelDownloader();
+			System.out.println("Choose an option to download URLs:" +'\n'+"1) Sequential Download"+'\n'+"2) Parallel Download" +'\n'+ "In case of incorrect input parallel method will be chosen automatically");
+			Scanner in=new Scanner(System.in);
+			String input=in.nextLine();
+			if(input.equals("1") ){
+				try {
+					Downloader downloader=new SequentialDownloader();
+					double start=System.nanoTime();
+					downloader.process(ctrl.getURLs());
+					double end=System.nanoTime();
+					double overall=(end-start) / Math.pow(10,9);
+					System.out.println("Time spent to download: " + overall +"seconds");
+				} catch (NewsAPIException e) {
+					System.out.println("Please load data first!");
+				}
+			}
+			else {
+				try {
+					Downloader downloader=new ParallelDownloader();
+					double start=System.nanoTime();
+					downloader.process(ctrl.getURLs());
+					double end=System.nanoTime();
+					double overall=(end-start) / Math.pow(10,9);
+					System.out.println("Time spent to download: " + overall +" seconds");
+				} catch (NewsAPIException e) {
+					System.out.println("Please load data first!");
+				}
+			}
+			/*try {
+				double start=System.nanoTime();
+				downloader.process(ctrl.getURLs());
+				double end=System.nanoTime();
+				double overall=(end-start) / Math.pow(10,9);
+				System.out.println("Time spent to download: " + overall +"seconds");
+			} catch (NewsAPIException e) {
+				System.out.println("Please load data first!");
+			}*/
+			System.out.println("URLs are successfully  downloaded");
 			//Todo
 		});
 		menu.insert("q", "Quit", null);

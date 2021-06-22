@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public abstract class Downloader {
 
@@ -27,7 +28,19 @@ public abstract class Downloader {
             if (fileName.isEmpty()) {
                 fileName = url4download.getHost() + HTML_EXTENTION;
             }
-            os = new FileOutputStream(DIRECTORY_DOWNLOAD + fileName);
+            List<Character> chars=fileName
+                    .chars()
+                    .mapToObj(e->(char) e)
+                    .collect(Collectors.toList());
+            if (chars.contains('?')){
+                os = new FileOutputStream(DIRECTORY_DOWNLOAD + "InvalidFileName");
+                return  fileName=null;
+            }
+            else {
+                os = new FileOutputStream(DIRECTORY_DOWNLOAD + fileName);
+            }
+
+            //os = new FileOutputStream(DIRECTORY_DOWNLOAD + fileName);
 
             byte[] b = new byte[2048];
             int length;
@@ -35,13 +48,13 @@ public abstract class Downloader {
                 os.write(b, 0, length);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Invalid filename: "+fileName+". URL was not added");
         } finally {
             try {
                 Objects.requireNonNull(is).close();
                 Objects.requireNonNull(os).close();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Moved to the next URL in the list");
             }
         }
         return fileName;
